@@ -1,0 +1,169 @@
+$content-family: "BoonJot";
+
+@font-face {
+  font-family: $content-family;
+  src: url('../fonts/BoonJot-400.woff2') format('woff2'),
+       url('../fonts/BoonJot-400.woff') format('woff'),
+       url('../fonts/BoonJot-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+$heading-family: "Boon UI";
+@font-face {
+  font-family: $heading-family;
+  src: url('../fonts/Boon-UI-Thai-400-hinted.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$hero-family: "BoonTook Mon";
+@font-face {
+  font-family: $hero-family;
+  src: url('../fonts/BoonTook-Mon-Ultra.woff2') format('woff2'),
+       url('../fonts/BoonTook-Mon-Ultra.woff') format('woff'),
+       url('../fonts/BoonTook-Mon-Ultra.ttf') format('truetype');
+  font-weight: 950;
+  font-style: normal;
+}
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+@mixin ot-feature($argument) {
+  @include vendor-prefix(font-feature-settings, #{$argument})
+}
+
+html {
+  @include ot-feature('"locl" 1');
+}
+
+.ss01,
+[lang|="pi"],
+[lang|="sa"],
+[lang|="ro"],
+[lang|="mo"] {
+  @include ot-feature('"ss01"');
+}
+
+.tnum {
+  @include ot-feature('"tnum"');
+}
+
+.pnum {
+  @include ot-feature('"pnum"');
+}
+
+.sups {
+  @include ot-feature('"sups"');
+}
+
+.subs {
+  @include ot-feature('"subs"');
+}
+
+.numr {
+  @include ot-feature('"numr"');
+}
+
+.dnom {
+  @include ot-feature('"dnom"');
+}
+
+.frac {
+  @include ot-feature('"frac"');
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.site-nav {
+  font-family: $heading-font-family;
+  color: $black-color;
+}
+
+strong, em {
+  font-weight: 400;
+  font-style: normal;
+  color: $black-color;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+/**
+ * Page content
+ */
+.page-heading {
+    font-size: 24px;
+    line-height: 1.4;
+
+    &:before { content: "๏ "; }
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 24px;
+    line-height: 1.4;
+
+    &:before { content: "๏ "; }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}

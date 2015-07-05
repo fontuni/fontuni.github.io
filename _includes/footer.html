@@ -1,0 +1,53 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+
+
+      <div class="footer-col  footer-col-3">
+        <h4 class="footer-heading">สำนักอักขระฟอนต์อยู่นี่</h4>
+        <p class="text">{{ site.description }}</p>
+      </div>
+
+      <div class="footer-col footer-col-1">
+        <h4 class="footer-heading">ติดต่อและติดตามอยู่นี่</h4>
+        <ul class="contact-list">
+
+          {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email }}">
+              <span class="icon">
+                <img src="/images/icons/email.min.svg" alt="email">
+              </span>
+              <span>{{ site.email }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="icon">
+                <img src="/images/icons/github.min.svg" alt="github">
+              </span>
+              <span>@{{ site.github_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="icon">
+                <img src="/images/icons/twitter.min.svg" alt="twitter">
+              </span>
+              <span>@{{ site.twitter_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
