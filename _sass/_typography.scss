@@ -169,7 +169,7 @@ h4 {
 }
 
 table.thai-pangram {
-  font-size: 1.25em;
+  color: $black-color;
   margin-bottom: 1em;
   border-spacing: 0;
   th {
@@ -184,7 +184,7 @@ table.thai-pangram {
 }
 
 @include media-query($on-palm) {
-  table.thai-pangram {
+  table.thai-pangram.responsive {
     th, td {
       display: block;
       width: 100%;
