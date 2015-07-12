@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6,
   color: $black-color;
 }
 
-strong, em {
+strong, em, th {
   font-weight: 400;
   font-style: normal;
   color: $black-color;
@@ -166,4 +166,26 @@ h4 {
     h4 {
         font-size: 16px;
     }
+}
+
+table.thai-pangram {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  border-spacing: 0;
+  th {
+    padding-bottom: 1em;
+    &:last-child { display: none; }
+  }
+  th,td {
+    display: table-cell;
+  }
+}
+
+@include media-query($on-palm) {
+  table.thai-pangram {
+    th, td {
+      display: block;
+      width: 100%;
+    }
+  }
 }
