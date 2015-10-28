@@ -18,3 +18,9 @@ permalink: /articles/:year-:month-:day-:title.html
 markdown: kramdown
 exclude: [CNAME, README.md]
 
+# Github
+github:
+  owner_name: "fontuni"
+  owner_url: "https://github.com/fontuni"
+  repository_url: "https://github.com/fontuni/fontuni.github.io"
+
