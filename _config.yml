@@ -24,3 +24,12 @@ github:
   owner_url: "https://github.com/fontuni"
   repository_url: "https://github.com/fontuni/fontuni.github.io"
 
+collections:
+  boonjot:
+    output: true
+    defaults:
+      scope:
+        path: ""
+        type: font
+        values:
+        layout: page

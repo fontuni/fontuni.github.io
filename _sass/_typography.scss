@@ -2,13 +2,38 @@ $content-family: "BoonJot-v1.0";
 $heading-family: "Boon-v1.0";
 $hero-family: "BoonTook Mon-v2.0";
 
+@mixin font-include($path, $family, $name, $weight, $style) {
+  font-family: $family;
+  src: url(../#{$path}/fonts/woff2/#{$name}.woff2) format('woff2'),
+       url(../fonts/woff/#{$name}.woff) format('woff'),
+       url(../fonts/ttf/#{$name}.ttf) format('truetype');
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// Theme-specific fonts
+@font-face {
+  @include font-include(boonjot, $content-family, BoonJot-400, 400, normal);
+}
+@font-face {
+  @include font-include(boonjot, $content-family, BoonJot-400i, 400, italic);
+}
+
 @font-face {
   font-family: $content-family;
-  src: url('../fonts/BoonJot-400.woff2') format('woff2'),
-       url('../fonts/BoonJot-400.woff') format('woff'),
-       url('../fonts/BoonJot-400.ttf') format('truetype');
+  src: url('../boonjot/fonts/BoonJot-400.woff2') format('woff2'),
+       url('../boonjot/fonts/BoonJot-400.woff') format('woff'),
+       url('../boonjot/fonts/BoonJot-400.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+}
+@font-face {
+  font-family: $content-family;
+  src: url('../boonjot/fonts/BoonJot-400i.woff2') format('woff2'),
+       url('../boonjot/fonts/BoonJot-400i.woff') format('woff'),
+       url('../boonjot/fonts/BoonJot-400i.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
