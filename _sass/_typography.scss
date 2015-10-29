@@ -1,6 +1,6 @@
-$content-family: "BoonJot-v1.0";
+$content-family: "BoonJot";
 $heading-family: "Boon";
-$hero-family: "BoonTook-Mon-v2.0";
+$hero-family: "BoonTook Mon";
 
 @mixin font-include($path, $family, $name, $weight, $style) {
   font-family: $family;
@@ -13,10 +13,10 @@ $hero-family: "BoonTook-Mon-v2.0";
 
 // Theme-specific fonts
 @font-face {
-  @include font-include(boonjot, "BoonJot-v1.0", BoonJot-400, 400, normal);
+  @include font-include(boonjot, "BoonJot", BoonJot-400, 400, normal);
 }
 @font-face {
-  @include font-include(boonjot, "BoonJot-v1.0", BoonJot-400i, 400, italic);
+  @include font-include(boonjot, "BoonJot", BoonJot-400i, 400, italic);
 }
 
 @font-face {
@@ -27,10 +27,10 @@ $hero-family: "BoonTook-Mon-v2.0";
 }
 
 @font-face {
-  @include font-include(boontook, "BoonTook-Mon-v2.0", BoonTook-Mon, 400, normal);
+  @include font-include(boontook, "BoonTook Mon", BoonTook-Mon, 400, normal);
 }
 @font-face {
-  @include font-include(boontook, "BoonTook-Mon-v2.0", BoonTook-Mon-Oblique, 400, italic);
+  @include font-include(boontook, "BoonTook Mon", BoonTook-Mon-Oblique, 400, italic);
 }
 
 @mixin vendor-prefix($name, $argument) {
@@ -203,6 +203,11 @@ table.thai-pangram {
 #download {
   font-size: 2em;
   a { text-decoration: none; }
+
+  &.boontook, &.boontook-mon {
+    a { color: #f71; }
+    a:hover { color: #444; }
+  }
 }
 
 .weight {

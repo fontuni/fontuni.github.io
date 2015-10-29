@@ -5,7 +5,7 @@
 
 // Our variables
 $sans-font: Boon,"Source Sans Pro", "Helvetica Neue", Arial, Thonburi, sans-serif;
-$display-font: "BoonJot-v1.0", sans-serif;
+$display-font: "BoonJot", sans-serif;
 
 $base-font-family: $display-font;
 $heading-font-family: $sans-font;
@@ -80,6 +80,23 @@ $on-laptop:        768px;
       }
       &:last-child {
         padding-left: $spacing-unit;
+      }
+      &:nth-child(2) img:first-child { display: none; }
+    }
+  }
+}
+
+@include media-query($on-palm) {
+  .font-list {
+    tr {
+      td:first-child { display: none; }
+      td:nth-child(2) img:first-child {
+        display: block;
+        margin-bottom: $spacing-unit/2;
+        border: 0 none;
+      }
+      td:last-child {
+        padding-left: 0;
       }
     }
   }
