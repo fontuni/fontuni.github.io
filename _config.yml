@@ -49,3 +49,19 @@ collections:
         type: font
         values:
         layout: font
+  boonbaan:
+    output: true
+    defaults:
+      scope:
+        path: ""
+        type: font
+        values:
+        layout: font
+  vain:
+    output: true
+    defaults:
+      scope:
+        path: ""
+        type: font
+        values:
+        layout: font
