@@ -25,6 +25,14 @@ github:
   repository_url: "https://github.com/fontuni/fontuni.github.io"
 
 collections:
+  boon:
+    output: true
+    defaults:
+      scope:
+        path: ""
+        type: font
+        values:
+        layout: font
   boonjot:
     output: true
     defaults:
@@ -32,4 +40,4 @@ collections:
         path: ""
         type: font
         values:
-        layout: page
+        layout: font

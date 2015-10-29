@@ -13,36 +13,17 @@ $hero-family: "BoonTook Mon-v2.0";
 
 // Theme-specific fonts
 @font-face {
-  @include font-include(boonjot, $content-family, BoonJot-400, 400, normal);
+  @include font-include(boonjot, "BoonJot-v1.0", BoonJot-400, 400, normal);
 }
 @font-face {
-  @include font-include(boonjot, $content-family, BoonJot-400i, 400, italic);
-}
-
-@font-face {
-  font-family: $content-family;
-  src: url('../boonjot/fonts/BoonJot-400.woff2') format('woff2'),
-       url('../boonjot/fonts/BoonJot-400.woff') format('woff'),
-       url('../boonjot/fonts/BoonJot-400.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: $content-family;
-  src: url('../boonjot/fonts/BoonJot-400i.woff2') format('woff2'),
-       url('../boonjot/fonts/BoonJot-400i.woff') format('woff'),
-       url('../boonjot/fonts/BoonJot-400i.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
+  @include font-include(boonjot, "BoonJot-v1.0", BoonJot-400i, 400, italic);
 }
 
 @font-face {
-  font-family: $heading-family;
-  src: url('../fonts/Boon-400.woff2') format('woff2'),
-       url('../fonts/Boon-400.woff') format('woff'),
-       url('../fonts/Boon-400.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+  @include font-include(boon, "Boon-v1.0", Boon-400, 400, normal);
+}
+@font-face {
+  @include font-include(boon, "Boon-v1.0", Boon-400i, 400, italic);
 }
 
 @font-face {
@@ -114,7 +95,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 strong, em, th, .poem {
-  font-family: $content-family;
+  font-family: inherit;
   font-weight: 400;
   font-style: normal;
   color: $black-color;

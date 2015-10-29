@@ -1,3 +1,6 @@
 [submodule "_boonjot"]
 	path = _boonjot
 	url = https://github.com/fontuni/boonjot.git
+[submodule "_boon"]
+	path = _boon
+	url = https://github.com/fontuni/boon.git
