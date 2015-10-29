@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
-  <article class="post-content" style="font-family: '{{ page.fontfamily }}';">
+  <article class="post-content {% if page.class %}{{ page.class }}{% endif %}" style="font-family: '{{ page.fontfamily }}' !important;">
     {{ content }}
   </article>
 

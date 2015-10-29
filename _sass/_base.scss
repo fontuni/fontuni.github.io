@@ -206,3 +206,10 @@ pre {
         }
     }
 }
+
+hr {
+  height: 1px;
+  border: 0 none;
+  background: #ddd;
+  margin: $spacing-unit/2 0;
+}

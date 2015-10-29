@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$sans-font: "Boon-v1.0","Source Sans Pro", "Helvetica Neue", Arial, Thonburi, sans-serif;
+$sans-font: Boon,"Source Sans Pro", "Helvetica Neue", Arial, Thonburi, sans-serif;
 $display-font: "BoonJot-v1.0", sans-serif;
 
 $base-font-family: $display-font;
@@ -60,6 +60,27 @@ $on-laptop:        768px;
     font-size: 48px;
     //font-size: 4.8vw;
     line-height: 1.25;
-    margin: $spacing-unit/2 0;
+    margin: 0;
+  }
+}
+
+.font-list {
+  border-top: 1px solid #ddd;
+  margin-top: $spacing-unit;
+  border-spacing: 0;
+  tr {
+    td {
+      border-bottom: 1px solid #ddd;
+      padding: $spacing-unit/2 0;
+      vertical-align: top;
+
+      img {
+        min-width: 140px;
+        border: 1px solid #ddd;
+      }
+      &:last-child {
+        padding-left: $spacing-unit;
+      }
+    }
   }
 }
