@@ -12,4 +12,4 @@
 	url = https://github.com/fontuni/boonbaan.git
 [submodule "_vain"]
 	path = _vain
-	url = git@github.com:fontuni/vain.git
+	url = https://github.com/fontuni/vain.git
