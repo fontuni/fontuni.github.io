@@ -4,3 +4,6 @@
 [submodule "_boon"]
 	path = _boon
 	url = https://github.com/fontuni/boon.git
+[submodule "_boontook"]
+	path = _boontook
+	url = https://github.com/fontuni/boontook.git

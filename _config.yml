@@ -41,3 +41,11 @@ collections:
         type: font
         values:
         layout: font
+  boontook:
+    output: true
+    defaults:
+      scope:
+        path: ""
+        type: font
+        values:
+        layout: font

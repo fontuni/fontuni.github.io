@@ -1,12 +1,12 @@
 $content-family: "BoonJot-v1.0";
 $heading-family: "Boon-v1.0";
-$hero-family: "BoonTook Mon-v2.0";
+$hero-family: "BoonTook-Mon-v2.0";
 
 @mixin font-include($path, $family, $name, $weight, $style) {
   font-family: $family;
   src: url(../#{$path}/fonts/woff2/#{$name}.woff2) format('woff2'),
-       url(../fonts/woff/#{$name}.woff) format('woff'),
-       url(../fonts/ttf/#{$name}.ttf) format('truetype');
+       url(../#{$path}fonts/woff/#{$name}.woff) format('woff'),
+       url(../#{$path}fonts/ttf/#{$name}.ttf) format('truetype');
   font-weight: $weight;
   font-style: $style;
 }
@@ -27,12 +27,10 @@ $hero-family: "BoonTook Mon-v2.0";
 }
 
 @font-face {
-  font-family: $hero-family;
-  src: url('../fonts/BoonTook-Mon.woff2') format('woff2'),
-       url('../fonts/BoonTook-Mon.woff') format('woff'),
-       url('../fonts/BoonTook-Mon.ttf') format('truetype');
-  font-weight: 950;
-  font-style: normal;
+  @include font-include(boontook, "BoonTook-Mon-v2.0", BoonTook-Mon, 400, normal);
+}
+@font-face {
+  @include font-include(boontook, "BoonTook-Mon-v2.0", BoonTook-Mon-Oblique, 400, italic);
 }
 
 @mixin vendor-prefix($name, $argument) {
