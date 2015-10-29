@@ -10,3 +10,6 @@
 [submodule "_boonbaan"]
 	path = _boonbaan
 	url = https://github.com/fontuni/boonbaan.git
+[submodule "_vain"]
+	path = _vain
+	url = git@github.com:fontuni/vain.git
