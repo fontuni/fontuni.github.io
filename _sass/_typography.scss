@@ -5,8 +5,8 @@ $hero-family: "BoonTook Mon";
 @mixin font-include($path, $family, $name, $weight, $style) {
   font-family: $family;
   src: url(../#{$path}/fonts/woff2/#{$name}.woff2) format('woff2'),
-       url(../#{$path}fonts/woff/#{$name}.woff) format('woff'),
-       url(../#{$path}fonts/ttf/#{$name}.ttf) format('truetype');
+       url(../#{$path}/fonts/woff/#{$name}.woff) format('woff'),
+       url(../#{$path}/fonts/ttf/#{$name}.ttf) format('truetype');
   font-weight: $weight;
   font-style: $style;
 }
@@ -32,6 +32,16 @@ $hero-family: "BoonTook Mon";
 @font-face {
   @include font-include(boontook, "BoonTook Mon", BoonTook-Mon-Oblique, 400, italic);
 }
+
+// Font options
+@mixin font-class($family, $weight, $style) {
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+.boontook-mon { @include font-class("BoonTook Mon", 400, normal); }
+
 
 @mixin vendor-prefix($name, $argument) {
   -webkit-#{$name}: #{$argument};
