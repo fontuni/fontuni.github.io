@@ -91,6 +91,11 @@
   border-bottom: 1px solid $grey-color-light;
 }
 
+.post-meta {
+  float: none;
+  clear: both;
+}
+
 /**
  * Site footer
  */
@@ -158,3 +163,18 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
+
+.float-right { float: right; margin-left: $spacing-unit / 2; }
+.float-left { float: left; margin-right: $spacing-unit / 2; }
+
+.float-right, .float-left {
+  width: 240px;
+}
+
+@include media-query($on-palm) {
+  .float-right, .float-left {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
