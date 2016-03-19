@@ -13,3 +13,6 @@
 [submodule "_vain"]
 	path = _vain
 	url = https://github.com/fontuni/vain.git
+[submodule "_f0nt"]
+	path = _f0nt
+	url = https://github.com/fontuni/f0nt.git

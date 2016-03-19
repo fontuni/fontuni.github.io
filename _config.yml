@@ -10,8 +10,9 @@ url: "https://fontuni.com" # the base hostname & protocol for your site
 timezone: Asia/Bangkok
 
 email: uni@fontuni.com
-twitter_username: fontuni
 github_username: fontuni
+twitter_username: fontuni
+facebook_username: fontuni
 
 # Build settings
 permalink: /articles/:year-:month-:day-:title.html
@@ -58,6 +59,14 @@ collections:
         values:
         layout: font
   vain:
+    output: true
+    defaults:
+      scope:
+        path: ""
+        type: font
+        values:
+        layout: font
+  f0nt:
     output: true
     defaults:
       scope:

@@ -30,7 +30,7 @@
               <span class="icon">
                 <img src="/images/icons/github.min.svg" alt="github">
               </span>
-              <span>@{{ site.github_username }}</span>
+              <span>{{ site.github_username }}</span>
             </a>
           </li>
           {% endif %}
@@ -41,7 +41,18 @@
               <span class="icon">
                 <img src="/images/icons/twitter.min.svg" alt="twitter">
               </span>
-              <span>@{{ site.twitter_username }}</span>
+              <span>{{ site.twitter_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.facebook_username %}
+          <li>
+            <a href="https://facebook.com/{{ site.facebook_username }}">
+              <span class="icon">
+                <img src="/images/icons/facebook.min.svg" alt="facebook">
+              </span>
+              <span>{{ site.facebook_username }}</span>
             </a>
           </li>
           {% endif %}
