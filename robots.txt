@@ -1,0 +1,31 @@
+User-agent: *
+
+Disallow: /boon/sources/
+Disallow: /boon/sfd/
+Disallow: /boon/libraries/
+Disallow: /boon/scripts/
+
+Disallow: /boonbaan/sources/
+Disallow: /boonbaan/sfd/
+Disallow: /boonbaan/libraries/
+Disallow: /boonbaan/scripts/
+
+Disallow: /boonjot/sources/
+Disallow: /boonjot/sfd/
+Disallow: /boonjot/libraries/
+Disallow: /boonjot/scripts/
+
+Disallow: /boontook/sources/
+Disallow: /boontook/sfd/
+Disallow: /boontook/libraries/
+Disallow: /boontook/scripts/
+
+Disallow: /f0nt/sources/
+Disallow: /f0nt/sfd/
+Disallow: /f0nt/libraries/
+Disallow: /f0nt/scripts/
+
+Disallow: /vain/sources/
+Disallow: /vain/sfd/
+Disallow: /vain/libraries/
+Disallow: /vain/scripts/
