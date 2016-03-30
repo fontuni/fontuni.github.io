@@ -25,6 +25,10 @@ github:
   owner_url: "https://github.com/fontuni"
   repository_url: "https://github.com/fontuni/fontuni.github.io"
 
+# Github Pages Sitemap
+gems:
+  - jekyll-sitemap
+
 collections:
   boon:
     output: true
