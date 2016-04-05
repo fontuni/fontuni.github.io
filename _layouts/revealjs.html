@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="jekyll">
+  <meta name="author" content="สังศิต ไสววรรณ" />
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="{{ site.revealjs }}/css/reveal.min.css"/>
+  <style type="text/css">code{white-space: pre;}</style>
+
+  {% if page.css %}
+  <link rel="stylesheet" href="{{ page.css | prepend: site.baseurl }}">
+  {% endif %}
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = '{{ site.revealjs }}/css/print/pdf.min.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+  <!--[if lt IE 9]>
+  <script src="{{ site.revealjs }}/lib/js/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+{% if page.fontfamily && page.fontstyles %}
+  <form class="select-form print-hide">
+    <select name="font-selector" id="font-selector" onchange="fontSelector()">
+    {% for style in page.fontstyles %}
+      {% if style == 400 %}
+        <option value="{{ page.fontfamily | downcase }}-{{ style }}" selected>{{ page.fontfamily }} {{ style }}</option>
+      {% else %}
+        <option value="{{ page.fontfamily | downcase }}-{{ style }}">{{ page.fontfamily }} {{ style }}</option>
+      {% endif %}
+    {% endfor %}
+    </select>
+  </form>
+{% endif %}
+
+  <div class="reveal">
+    <div class="slides">
+      {{ content }}
+    </div>
+  </div>
+
+  <script src="{{ site.revealjs }}/lib/js/head.min.js"></script>
+  <script src="{{ site.revealjs }}/js/reveal.min.js"></script>
+
+  {% if page.js %}
+    <script src="{{ page.js }}"></script>
+  {% endif %}
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,         // Display controls in the bottom right corner
+        progress: true,         // Display a presentation progress bar
+        history: true,          // Push each slide change to the browser history
+        center: false,                       // Vertical centering of slides
+        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
+        slideNumber: false,                // Display the page number of the current slide
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '{{ site.revealjs }}/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '{{ site.revealjs }}/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ site.revealjs }}/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '{{ site.revealjs }}/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: '{{ site.revealjs }}/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: '{{ site.revealjs }}/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  
+  
+  </body>
+</html>

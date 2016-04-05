@@ -38,6 +38,14 @@ collections:
         type: font
         values:
         layout: font
+  boonbaan:
+    output: true
+    defaults:
+      scope:
+        path: ""
+        type: font
+        values:
+        layout: font
   boonjot:
     output: true
     defaults:
@@ -47,14 +55,6 @@ collections:
         values:
         layout: font
   boontook:
-    output: true
-    defaults:
-      scope:
-        path: ""
-        type: font
-        values:
-        layout: font
-  boonbaan:
     output: true
     defaults:
       scope:
@@ -78,3 +78,33 @@ collections:
         type: font
         values:
         layout: font
+
+exclude: [
+  _boon/backup,
+  _boon/scripts,
+  _boon/sfd,
+  _boon/sources,
+  _boonbaan/backup,
+  _boonbaan/scripts,
+  _boonbaan/sfd,
+  _boonbaan/sources,
+  _boonjot/backup,
+  _boonjot/scripts,
+  _boonjot/sfd,
+  _boonjot/sources,
+  _boontook/backup,
+  _boontook/scripts,
+  _boontook/sfd,
+  _boontook/sources,
+  _vain/backup,
+  _vain/scripts,
+  _vain/sfd,
+  _vain/sources,
+  _f0nt/backup,
+  _f0nt/scripts,
+  _f0nt/sfd,
+  _f0nt/sources 
+]
+
+# reveal.js url
+revealjs: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0
