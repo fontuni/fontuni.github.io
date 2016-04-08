@@ -7,12 +7,16 @@
     <meta name="description" content="{{ site.description }}">
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    
+    <link rel="stylesheet" href="{{ "/boontook/css/boontook-all.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/boon/css/boon-all.css" | prepend: site.baseurl }}">
+
     {% if page.css %}
       {% for css in page.css %}
         <link rel="stylesheet" href="{{ css | prepend: site.baseurl }}">
       {% endfor %}
     {% endif %}
+    
+    <!--<script src="/js/masonry.pkgd.min.js"></script>-->
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

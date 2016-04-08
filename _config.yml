@@ -4,7 +4,7 @@ title: สำนักอักขระฟอนต์อยู่นี่
 short_title: ฟอนต์อยู่นี่
 tagline: ฟอนต์เกิดใหม่บ้างในบางเวลา ...
 description: > # this means to ignore newlines until "baseurl:"
-  สำนักอักขระฟอนต์อยู่นี่  เป็นโรงหล่อฟอนต์เสรีที่มุ่งผลิตฟอนต์ไทยให้แสดงผลได้ถูกต้องและดูไม่แย่ เน้นมาตรฐานยูนิโค้ดและโอเพ่นไทป์ เพื่อให้มนุษย์ไทยและมนุษย์โลกมีอิสระที่จะนำฟอนต์ไปใช้งาน, แจกจ่าย หรือดัดแปลงได้อย่างสบายใจ
+  สำนักอักขระฟอนต์อยู่นี่  มุ่งผลิตฟอนต์เสรีให้แสดงผลได้ถูกต้องและดีพอ เน้นมาตรฐานยูนิโค้ดและโอเพ่นไทป์ เพื่อให้ทุกคนมีอิสระในการใช้งาน, แจกจ่าย หรือดัดแปลงได้อย่างสบายใจ
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://fontuni.com" # the base hostname & protocol for your site
 timezone: Asia/Bangkok
@@ -17,7 +17,6 @@ facebook_username: fontuni
 # Build settings
 permalink: /articles/:year-:month-:day-:title.html
 markdown: kramdown
-exclude: [CNAME, README.md]
 
 # Github
 github:
@@ -30,80 +29,43 @@ gems:
   - jekyll-sitemap
 
 collections:
-  boon:
+  fonts:
     output: true
+    permalink: /:path.html
     defaults:
       scope:
         path: ""
         type: font
-        values:
-        layout: font
-  boonbaan:
-    output: true
-    defaults:
-      scope:
-        path: ""
-        type: font
-        values:
-        layout: font
-  boonjot:
-    output: true
-    defaults:
-      scope:
-        path: ""
-        type: font
-        values:
-        layout: font
-  boontook:
-    output: true
-    defaults:
-      scope:
-        path: ""
-        type: font
-        values:
-        layout: font
-  vain:
-    output: true
-    defaults:
-      scope:
-        path: ""
-        type: font
-        values:
-        layout: font
-  f0nt:
-    output: true
-    defaults:
-      scope:
-        path: ""
-        type: font
-        values:
+      values:
         layout: font
 
 exclude: [
-  _boon/backup,
-  _boon/scripts,
-  _boon/sfd,
-  _boon/sources,
-  _boonbaan/backup,
-  _boonbaan/scripts,
-  _boonbaan/sfd,
-  _boonbaan/sources,
-  _boonjot/backup,
-  _boonjot/scripts,
-  _boonjot/sfd,
-  _boonjot/sources,
-  _boontook/backup,
-  _boontook/scripts,
-  _boontook/sfd,
-  _boontook/sources,
-  _vain/backup,
-  _vain/scripts,
-  _vain/sfd,
-  _vain/sources,
-  _f0nt/backup,
-  _f0nt/scripts,
-  _f0nt/sfd,
-  _f0nt/sources 
+  CNAME,
+  README.md,
+  _fonts/boon/backup,
+  _fonts/boon/scripts,
+  _fonts/boon/sfd,
+  _fonts/boon/sources,
+  _fonts/boonbaan/backup,
+  _fonts/boonbaan/scripts,
+  _fonts/boonbaan/sfd,
+  _fonts/boonbaan/sources,
+  _fonts/boonjot/backup,
+  _fonts/boonjot/scripts,
+  _fonts/boonjot/sfd,
+  _fonts/boonjot/sources,
+  _fonts/boontook/backup,
+  _fonts/boontook/scripts,
+  _fonts/boontook/sfd,
+  _fonts/boontook/sources,
+  _fonts/vain/backup,
+  _fonts/vain/scripts,
+  _fonts/vain/sfd,
+  _fonts/vain/sources,
+  _fonts/f0nt/backup,
+  _fonts/f0nt/scripts,
+  _fonts/f0nt/sfd,
+  _fonts/f0nt/sources 
 ]
 
 # reveal.js url

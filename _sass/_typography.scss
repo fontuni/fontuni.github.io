@@ -1,234 +1,57 @@
-$content-family: "BoonJot";
-$heading-family: "Boon";
-$hero-family: "BoonTook Mon";
-
-@mixin font-include($path, $family, $name, $weight, $style) {
-  font-family: $family;
-  src: url(../#{$path}/fonts/woff2/#{$name}.woff2) format('woff2'),
-       url(../#{$path}/fonts/woff/#{$name}.woff) format('woff'),
-       url(../#{$path}/fonts/ttf/#{$name}.ttf) format('truetype');
-  font-weight: $weight;
-  font-style: $style;
+body {
+  line-height: 1.5;
+  font-weight: 400;
 }
 
-// Theme-specific fonts
-@font-face {
-  @include font-include(boonjot, "BoonJot", BoonJot-400, 400, normal);
-}
-@font-face {
-  @include font-include(boonjot, "BoonJot", BoonJot-400i, 400, italic);
-}
-
-@font-face {
-  @include font-include(boon, "Boon", Boon-400, 400, normal);
-}
-@font-face {
-  @include font-include(boon, "Boon", Boon-400i, 400, italic);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 600;
 }
 
-@font-face {
-  @include font-include(boontook, "BoonTook Mon", BoonTook-Mon, 400, normal);
-}
-@font-face {
-  @include font-include(boontook, "BoonTook Mon", BoonTook-Mon-Oblique, 400, italic);
-}
-
-// Font options
-@mixin font-class($family, $weight, $style) {
-  font-family: $family;
-  font-weight: $weight;
-  font-style: $style;
-}
-
-.boontook-mon { @include font-class("BoonTook Mon", 400, normal); }
-
-
-@mixin vendor-prefix($name, $argument) {
-  -webkit-#{$name}: #{$argument};
-  -ms-#{$name}: #{$argument};
-  -moz-#{$name}: #{$argument};
-  -o-#{$name}: #{$argument};
-  #{$name}: #{$argument};
-}
-
-@mixin ot-feature($argument) {
-  @include vendor-prefix(font-feature-settings, #{$argument})
-}
-
-html {
-  @include ot-feature('"locl" 1');
-}
-
-.ss01,
-[lang|="pi"],
-[lang|="sa"],
-[lang|="ro"],
-[lang|="mo"] {
-  @include ot-feature('"ss01"');
-}
-
-.tnum {
-  @include ot-feature('"tnum"');
-}
-
-.pnum {
-  @include ot-feature('"pnum"');
-}
-
-.sups {
-  @include ot-feature('"sups"');
-}
-
-.subs {
-  @include ot-feature('"subs"');
-}
-
-.numr {
-  @include ot-feature('"numr"');
-}
-
-.dnom {
-  @include ot-feature('"dnom"');
-}
-
-.frac {
-  @include ot-feature('"frac"');
-}
-
-
-h1, h2, h3, h4, h5, h6,
-.site-nav {
-  font-family: $heading-font-family;
-  color: $black-color;
-}
-
-strong, em, th, .poem {
-  font-family: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  color: $black-color;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 21px;
-}
-
-h3 {
-    font-size: 18px;
-}
-
-h4 {
-    font-size: 1em;
-}
-
-small {
-  font-size: 13px;
-  line-height: 1.25em;
-}
-
-/**
- * Page content
- */
-.page-heading {
-    font-size: 24px;
-    line-height: 1.4;
-
-    &:before { content: "๏ "; }
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-/**
- * Posts
- */
-.post-header {
-}
-
-.post-title {
-    font-size: 24px;
-    line-height: 1.4;
-    margin-bottom: $spacing-unit/2;
-    padding-bottom: 0;
-
-    &:before { content: "๏ "; }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 16px;
-    }
-}
-
-table.thai-pangram {
-  color: $black-color;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-bottom: 1em;
-  border-spacing: 0;
-  th {
-    padding-bottom: 1em;
-    &:last-child { display: none; }
-  }
-  th,td {
-    display: table-cell;
-    text-align: left;
-    padding-right: 1.5em;
+}
+
+.site-description {
+  font-size: 0.9em;
+  font-style: oblique;
+  opacity: 0.8;
+  transition: 1s;
+  &:hover { 
+    opacity: 1;
+    color: #111;
   }
 }
 
-@include media-query($on-palm) {
-  table.thai-pangram.responsive {
-    th, td {
-      display: block;
-      width: 100%;
-    }
-  }
+a {
+  color: $brand;
+}
+a:hover {
+  opacity: 0.5;
 }
 
-// Boon
-#download {
-  font-size: 2em;
-  a { text-decoration: none; }
-
-  &.boontook, &.boontook-mon {
-    a { color: #f71; }
-    a:hover { color: #444; }
-  }
-  &.boonbaan-700, &.boonbaan-400 {
-    a { color: #8b0; }
-    a:hover { color: #444; }
-  }
-}
-
-.weight {
+.site-title,
+h1.post-title,
+.tagline {
+  display: block;
   font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  color: $dark;
+}
+
+h1.post-title {
+  font-family: BoonTook Mon;
+  font-weight: 400;
 }

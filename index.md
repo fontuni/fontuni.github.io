@@ -3,15 +3,19 @@ layout: default
 ---
 
 <div class="hero">
-  <div class="tagline">{{ site.tagline }}</div>
+  <div class="tagline boontook-mon">{{ site.tagline }}</div>
   <!--<p style="font-size:1.5em;">อยากให้เรามีเวลาทำฟอนต์ฟรีมากขึ้น?<br> <a href="http://fontuni.bigcartel.com/">อุดหนุนของชำร่วยที่นี่เลยครับ!</a></p>-->
 </div>
 
-| [![F0nt Thumbnail](f0nt/images/f0nt-thumbnail-350.png)](/f0nt/) | [![F0nt Banner](f0nt/images/f0nt-banner-600.png)](/f0nt/) **ฟ๐นต์** เป็นฟอนต์ที่ได้รับแรงบันดาลใจจากโลโก้ [f0nt.com](http://f0nt.com) แต่ยัง **อยู่ระหว่างการจัดทำ** และทดลองฟีเจอร์ที่ซับซ้อน โดยตั้งใจให้เป็นฟอนต์ปากกามาร์กเกอร์ 10 น้ำหนัก และใส่ฟีเจอร์ Ligature เพื่อเชื่อมตัวอักษรไทยบางตัวให้เป็นตัวเดียวกัน เช่น นด นต มน มห ษย เป็นต้น <br> [๏ เชิญอ่านรายละเอียดเพิ่มเติม ๛](/f0nt/)|
-| [![Boon Thumbnail](boon/images/boon-thumbnail-350.png)](/boon/) | [![BoonTook Banner](boon/images/boon-banner-600.png)](/boon/) **บุญ** คือ ชุดตัวอักษรตระกูลหนึ่ง (font family) ที่มุ่งแสดงผลการจัดเรียงตัวอักษรไทยให้ถูกต้องในเว็บบราวเซอร์ ตัวอักษรทุกตัวทั้งไทย, ละติน และลาว นั้นวาดขึ้นจากรูปทรงเลขาคณิตเพื่อความเรียบง่าย โดยตั้งใจให้สามารถใช้งานได้ดีทั้งส่วนที่เป็นยูเซอร์อินเตอร์เฟสและส่วนที่เป็นเนื้อความ <br> [๏ เชิญดาวน์โหลดเพื่อพิสูจน์ความประณีตของบุญ ๛](/boon/) |
-| [![BoonTook Thumbnail](boontook/images/boontook-thumbnail-350.png)](/boontook/) | [![BoonTook Banner](boontook/images/boontook-banner-600.png)](/boontook/) **บุญถึก** เป็นฟอนต์ตระกูลหนาน้ำหนักเดียวแต่มี 4 สไตล์ คือ บุญถึกตรง, บุญถึงเอน, บุญถึกมน และ บุญถึกมนเอน ชื่อฟอนต์คงบ่งบอกบุคลิกได้ดีโดยไม่ต้องบรรยาย ถึงแม้ตัวจะหนาแต่ก็ดูไม่มีพิษมีภัย เปรียบเทียบได้กับตัวละคร **Hodor** ใน Game of Thrones หรือ **Lennie Small** ในนิยาย Of Mice and Men ของ John Steinbeck และ **ฟอนต์อยู่นี่** ก็ใช้บุญถึกในโลโก้นั่นเอง <br> [๏ เชิญดาวน์โหลดเพื่อพิสูจน์ความน่ารักน่าชังของบุญถึก ๛](/boontook/) |
-| [![BoonJot Thumbnail](boonjot/images/boonjot-thumbnail-350.png)](/boonjot/) | [![BoonJot Banner](boonjot/images/boonjot-banner-600.png)](/boonjot/) **บุญจด** เป็นฟอนต์ลายมือสังเคราะห์แบบคนถนัดซ้ายซึ่งทำในคอมพิวเตอร์ทั้งหมด โดยวาดโครงใน [FontForge](http://fontforge.github.io/en-US/) เพื่อปรับน้ำหนักเส้น แล้วปรับแต่งรายละเอียดด้วย [Inkscape](https://inkscape.org/en/) บุญจดเอาลักษณะสไตล์ Italic มาทำให้ตัวตรง โดยไม่พยายามเชื่อมตัวอักษรเข้าด้วยกันเหมือนฟอนต์ลายมืออื่นๆ เลยทำให้มันพอจะอ่านง่ายแม้จะใช้ขนาดเล็กกับจอคอมพิวเตอร์ และตั้งแต่รุ่น 1.0 จึงได้เพิ่มตัวเอน <br> [๏ เชิญดาวน์โหลดเพื่อพิสูจน์ความร่าเริงของบุญจด ๛](/boonjot/) |
-| [![BoonฺBaan Thumbnail](boonbaan/images/boonbaan-thumbnail-350.png)](/boonbaan/) | [![BoonBaan Banner](boonbaan/images/boonbaan-banner-600.png)](/boonbaan/) **บุญบ้าน** (หรือชื่อเดิม **[บุญโฮม](http://www.f0nt.com/release/boonhome/)**) เป็นฟอนต์ลาวปนไทยที่หน้าตาตัวอักษรไทยกับลาวเหมือนกันจนแยกไม่ออก และประยุกต์เพิ่มตัวอักษรไทยบางตัวที่ไม่มีในภาษาลาว จากนั้นจึงออกแบบตัวละตินให้พอไปกันได้กับทั้งลาวและไทย สำหรับภาษาลาวน่าจะใช้บุญบ้านเป็นตัวเนื้อหาได้ แต่สำหรับภาษาไทยคงเหมาะจะใช้ในลักษณะพิเศษมากกว่า <br> [๏ เชิญดาวน์โหลดเพื่อพิสูจน์ความเป็นกันเองของบุญบ้าน ๛](/boonbaan/) |
-| [![Vain Thumbnail](vain/images/vain-thumbnail-350.png)](/vain/) | [![Vain Banner](vain/images/vain-banner-600.png)](/vain/) **เวร** เป็นฟอนต์ในอุดมคติของระบอบอำนาจนิยมซึ่งไม่อนุญาตให้ประชาชนแสดงความรู้สึกนึกคิดได้อย่างเสรี โดยเฉพาะในประเทศที่รัฐบาลทหารต้องการให้พลเมืองสงบปากสงบคำ ฟอนต์เวรนี่เหมาะกับรัฐบาลเผด็จการสำหรับใช้หลอกตาตัวเองเพื่อปกปิดสิ่งที่ไม่อยากอ่าน (ซึ่งง่ายกว่าการหุบปากคนอื่น) ก่อนที่พวกเขาจะมีความคิดเป็นผู้ใหญ่และรู้จักเรียนรู้ที่จะอยู่กับการวิพากษ์วิจารณ์ <br> [๏ เชิญดาวน์โหลดเพื่อพิสูจน์ความเวรของฟอนต์เวร! ๛](/vain/) |
-{: .font-list}
+
+<div class="grid font-icon clearfix">
+  {% assign fonts = site.fonts | sort: 'date') | reverse %}
+  {% for font in fonts %}
+    {% if font.thumbnail %}
+      <div class="grid-item">
+        <a href="{{ font.url }}" title="{{ font.title }}"><img src="{{ font.thumbnail }}" alt="{{ font.title }}"></a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
 
