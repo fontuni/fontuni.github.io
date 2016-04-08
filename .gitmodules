@@ -1,18 +1,18 @@
 [submodule "_boonjot"]
-	path = _boonjot
+	path = _fonts/boonjot
 	url = https://github.com/fontuni/boonjot.git
 [submodule "_boon"]
-	path = _boon
+	path = _fonts/boon
 	url = https://github.com/fontuni/boon.git
 [submodule "_boontook"]
-	path = _boontook
+	path = _fonts/boontook
 	url = https://github.com/fontuni/boontook.git
 [submodule "_boonbaan"]
-	path = _boonbaan
+	path = _fonts/boonbaan
 	url = https://github.com/fontuni/boonbaan.git
 [submodule "_vain"]
-	path = _vain
+	path = _fonts/vain
 	url = https://github.com/fontuni/vain.git
 [submodule "_f0nt"]
-	path = _f0nt
+	path = _fonts/f0nt
 	url = https://github.com/fontuni/f0nt.git
