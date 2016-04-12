@@ -1,0 +1,74 @@
+@media (max-width: 479px){
+  body { padding: 1em 1.5em; }
+}
+
+@media (min-width: 480px) and (max-width: 599px){
+  body { padding: 1.5em 3em; }
+}
+
+@media (min-width: 600px) and (max-width: 767px){
+  body { padding: 2em 4em; }
+}
+
+@media (max-width: 767px){
+  #sub {
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+}
+
+// flex layout
+// todo: cross browser prefix
+
+// 1+1+2+3+5+8 = 20
+$columns: 20;
+$colwidth: 100vw / 20;
+
+@media (min-width: 768px) {
+
+  html {
+    overflow-y: scroll;
+  }
+  
+  body {
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  #main {
+    //background: tomato;
+    flex: 0 0 65%;
+    min-height: 100vh;
+  }
+  #sub {
+    //background: lightgreen;
+    flex: 0 0 35%;
+    position: fixed;
+    min-height: 100vh;
+    margin-top: 0;
+  }
+  
+  #main .gutter,
+  #sub .gutter {
+    //padding: 1.5em 3em;
+    padding: $colwidth*0.75 $colwidth*1.5;
+  }
+  #sub .gutter {
+    padding-left: 0;
+  }
+}
+
+#download {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.post-meta { 
+  clear:both; 
+}

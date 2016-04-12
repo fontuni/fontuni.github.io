@@ -1,0 +1,96 @@
+---
+
+---
+@import "var";
+@import "mixin";
+
+$brand: #e00;
+$second: #f5f500;
+
+body {
+  background: darken($dark, 100%);
+  color: $light;
+}
+
+$border-color: lighten($dark, 30%);
+
+hr {
+  border-bottom: 1px solid $border-color;
+}
+
+@media (max-width: 767px) {
+  #sub {
+    border-top: 1px solid $border-color;
+  }
+}
+
+a:link {
+  color: $brand;
+}
+
+a:visited {
+  color: $brand;
+}
+
+a:hover {
+  color: $second;
+}
+
+a:active {
+  color: #fff;
+}
+
+.site-title,
+h1.post-title,
+.tagline,
+ul.contact-list li a,
+#download a {
+  color: $brand;
+  text-shadow: 0 1px 2px #000;
+}
+
+a.site-title {
+  color: #fff;
+  opacity: 0.9;
+  &:hover {
+    color: lighten($dark, 50%);
+  }
+}
+
+.site-nav ul {
+  li a {
+    color: $brand;
+    background: transparent;
+    box-shadow: 0em 0.1em 0.2em #000;
+    font-weight: 600;
+  }
+  li a:hover,
+  li.active a {
+    color: $dark;
+    background: $second;
+  }
+}
+
+h1,h2,h3,h4,h4,h6,
+.vain h1.post-title,
+#download {
+  font-family: "BoonTook Mon";
+  font-weight: 400;
+}
+
+.vain .banner img { 
+  background: $brand;
+  opacity: 0.9;
+  transition: .3s;
+  box-shadow: 0em 0.5em 0.5em #000;
+  &:hover { background: $second; }
+}
+
+.vain h1.post-title,
+#download a,
+ul.contact-list li a:hover { 
+  color: $second; 
+  opacity: 1;
+}
+
+#download a:hover { color: $brand; }

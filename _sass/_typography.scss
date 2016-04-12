@@ -1,6 +1,14 @@
+@import "var";
+@import "mixin";
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
 body {
+  font-family: $base-font-family;
   line-height: 1.5;
   font-weight: 400;
+  @include ot-feature('"locl"');
+  @include vendor-prefix(font-kerning, normal);
+  @include vendor-prefix(font-variant, common-ligatures);
 }
 
 h1,
@@ -19,8 +27,52 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+article ul,
+article ol {
   margin-bottom: 1em;
+}
+
+small { 
+  font-size: 0.75em; 
+}
+
+pre, code {
+  font-family: "Source Code Pro", monospace;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+code {
+  font-size: 0.75em;
+  background: darken($light, 3%);
+  padding: 0.1em 0.5em;
+}
+
+hr {
+  height: 0;
+  margin: 1em 0;
+  padding: 0;
+  border: 0 none;
+  border-bottom: 1px solid $border-color;
+}
+
+@media (max-width: 479px){
+  body { font-size: 14px; }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+  body { font-size: 15px; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  body { font-size: 16px; }
+}
+
+@media (min-width: 1024px) {
+  body { font-size: 1.5vw; }
 }
 
 .site-description {
@@ -30,15 +82,7 @@ p {
   transition: 1s;
   &:hover { 
     opacity: 1;
-    color: #111;
   }
-}
-
-a {
-  color: $brand;
-}
-a:hover {
-  opacity: 0.5;
 }
 
 .site-title,
@@ -46,12 +90,69 @@ h1.post-title,
 .tagline {
   display: block;
   font-size: 1.5em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-  color: $dark;
+  line-height: 1.25em;
+  margin-bottom: 1.75em;
 }
 
 h1.post-title {
   font-family: BoonTook Mon;
   font-weight: 400;
+}
+
+article,
+.post-content {
+  img, object {
+    width: 100%;
+  }
+}
+
+.post-content {
+  ol, ul {
+    padding-left: 1em;
+    margin-left: -1em;
+    
+    li {
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+  }
+  
+  ol {
+    list-style-type: decimal;
+    //list-style-type: thai;
+  }
+  
+  /*ul {
+    list-style-type: disc;
+  }*/
+  
+  ul li {
+    display: block;
+    &:before { 
+      content: "\2022"; // bullet
+      //content: "\2012"; // figure dash
+      margin-left: -1em;
+      margin-right: 0.5em;
+      font-family: Boon;
+    }
+  }
+  
+  ol, ul {
+    ol, ul {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.post-meta { 
+  font-size: 0.75em; 
+}
+
+.section-title:before,
+.post-list h2 a:before {
+  content: "\0E4F";
+  margin-left: -1em;
+  margin-right: 0.5em;
+  font-family: Boon;
 }

@@ -1,56 +1,45 @@
 <footer class="site-footer">
-    <div class="footer-col-wrapper">
 
-      <div class="footer-col footer-col-1">
+  <h2 class="hidden">ติดต่ออยู่นี่</h2>
+  
+  <ul class="contact-list">
+    
+    {% if site.facebook_username %}
+    <li>
+      <a href="https://facebook.com/{{ site.facebook_username }}" title="facebook.com/{{ site.facebook_username }}">
+        <i class="fa fa-facebook-square"></i> <span>facebook</span>
+      </a>
+    </li>
+    {% endif %}
+    
+    {% if site.twitter_username %}
+    <li>
+      <a href="https://twitter.com/{{ site.twitter_username }}" title="twitter.com/{{ site.twitter_username }}">
+        <i class="fa fa-twitter-square"></i> <span>twitter</span>
+      </a>
+    </li>
+    {% endif %}
 
-        <ul class="contact-list">
+    {% if site.github_username %}
+    <li>
+      <a href="https://github.com/{{ site.github_username }}" title="github.com/{{ site.github_username }}">
+        <i class="fa fa-github-square"></i> <span>github</span>
+      </a>
+    </li>
+    {% endif %}
+    
+    {% if site.email %}
+    <li>
+      <a href="mailto:{{ site.email }}" title="{{ site.email }}">
+        <i class="fa fa-envelope-square"></i> <span>email</span>
+      </a>
+    </li>
+    {% endif %}
 
-          {% if site.email %}
-          <li>
-            <a href="mailto:{{ site.email }}">
-              <span class="icon">
-                <img src="/images/icons/email.min.svg" alt="email">
-              </span>
-              <span>{{ site.email }}</span>
-            </a>
-          </li>
-          {% endif %}
+  </ul>
+  
+  <hr>
+  
+  <small class="copyrights">&copy; 2015-2016 <a href="https://fontuni.com/">fontuni.com</a></small>
 
-          {% if site.github_username %}
-          <li>
-            <a href="https://github.com/{{ site.github_username }}">
-              <span class="icon">
-                <img src="/images/icons/github.min.svg" alt="github">
-              </span>
-              <span>{{ site.github_username }}</span>
-            </a>
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="icon">
-                <img src="/images/icons/twitter.min.svg" alt="twitter">
-              </span>
-              <span>{{ site.twitter_username }}</span>
-            </a>
-          </li>
-          {% endif %}
-
-          {% if site.facebook_username %}
-          <li>
-            <a href="https://facebook.com/{{ site.facebook_username }}">
-              <span class="icon">
-                <img src="/images/icons/facebook.min.svg" alt="facebook">
-              </span>
-              <span>{{ site.facebook_username }}</span>
-            </a>
-          </li>
-          {% endif %}
-
-        </ul>
-      </div>
-
-    </div>
 </footer>

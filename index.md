@@ -1,21 +1,24 @@
 ---
 layout: default
+title: ฟอนต์เกิดใหม่บ้างในบางเวลา ...
 ---
 
-<div class="hero">
-  <div class="tagline boontook-mon">{{ site.tagline }}</div>
-  <!--<p style="font-size:1.5em;">อยากให้เรามีเวลาทำฟอนต์ฟรีมากขึ้น?<br> <a href="http://fontuni.bigcartel.com/">อุดหนุนของชำร่วยที่นี่เลยครับ!</a></p>-->
-</div>
+# {{ page.title }}
+{: .post-title }
 
+## รายชื่อฟอนต์
+{: .hidden }
 
-<div class="grid font-icon clearfix">
+<ol class="font-list">
   {% assign fonts = site.fonts | sort: 'date') | reverse %}
   {% for font in fonts %}
     {% if font.thumbnail %}
-      <div class="grid-item">
-        <a href="{{ font.url }}" title="{{ font.title }}"><img src="{{ font.thumbnail }}" alt="{{ font.title }}"></a>
-      </div>
+      <li>
+        <a class="{{ font.name }}" href="{{ font.url | replace:'index.html','' }}" title="{{ font.title }}">
+          <img class="svg" src="{{ font.thumbnail }}" alt="{{ font.title }}"><span>{{ font.title }}</span>
+        </a>
+      </li>
     {% endif %}
   {% endfor %}
-</div>
+</ol>
 

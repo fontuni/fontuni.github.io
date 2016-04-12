@@ -7,24 +7,33 @@ $colwidth: 100vw / 20;
 
 body {
   line-height: 1.5;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  @include clearfix();
 }
 
 .page-content,
 .site-info {
   > .wrapper {
-    padding: 1em;
+    padding: $colwidth $colwidth*1.5;
   }
   @include clearfix();
+  height: 100%;
 }
 
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
 
-.clearfix:after {
-  clear: both;
+
+.float-left { float: left; margin-right: 1em; }
+.float-right { float: right; margin-left: 1em; }
+
+.float-left,
+.float-right {
+  max-width: 33%;
+  max-height: 50%;
+  small { display: block; }
 }
 
 @media (max-width: 479px){
@@ -39,6 +48,18 @@ body {
     margin: auto;
     font-size: 15px;
   }
+  .page-content,
+  .site-info {
+    > .wrapper {
+      padding: $colwidth $colwidth;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    padding-top: $colwidth;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 767px){
@@ -47,43 +68,80 @@ body {
     margin: auto;
     font-size: 15px;
   }
+  .page-content,
+  .site-info {
+    > .wrapper {
+      padding: $colwidth $colwidth;
+    }
+  }
 }
 
 @media (min-width: 768px) {
-  .page-content {
-    width: $colwidth * 11;
-    margin-left: $colwidth;
-    float: left;
+
+  html {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
+  .container {
+    display: table;
+    table-layout: fixed;
+    min-height: 100vh;
+    padding-left: 0;
+    position: relative;
+  }
+  
+  .page-content {
+    width: $colwidth * 13.5;
+    display: table-cell;
+    min-height: 100vh;
+    box-sizing: content-box;
+    
+    .wrapper {
+      height: 100%;
+      padding: $colwidth*0.75 $colwidth*1.5;
+    }
+  }
+
   .site-info {
-    width: $colwidth * 6;
-    float: left;
-    margin-left: $colwidth;
-    margin-right: 0;
+    width: $colwidth * 4.5;
+    display: table-cell;
+    min-height: 100vh;
+    box-sizing: content-box;
+    position: relative;
+    
+    .wrapper { 
+      height: 100%;
+      position: fixed;
+      top: 0;
+      padding: $colwidth*0.75 $colwidth*1.5 $colwidth*0.75 0;
+    }
   }
 }
 
-@media (min-width: 960px) {
-
-  .page-content {
-    width: $colwidth * 10;
-    margin-left: $colwidth * 1.5;
-    float: left;
-  }
-  .site-info {
-    width: $colwidth * 6;
-    float: left;
-    margin-left: $colwidth * 1.5;
-    margin-right: 0;
-  }
-
-  html {
-    height: 100vh;
-    overflow-y: scroll;
-  }
-  
+@media (min-width: 1024px) {
   body {
     font-size: 1.5vw;
   }
+  .page-content {
+    width: $colwidth * 13;
+    .wrapper {
+      padding: $colwidth*0.75 $colwidth*1.5;
+    }
+  }
+  .site-info {
+    width: $colwidth * 4;
+    .wrapper { 
+      padding: $colwidth*0.75 $colwidth*1.5 $colwidth*0.75 0;
+    }
+  }
+}
 
-} 
+.site-nav ul {
+  margin-bottom: 1em;
+  @include clearfix;
+  li a {
+    display: block;
+    padding: 0.3em 0.75em;
+  }
+}

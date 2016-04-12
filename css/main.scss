@@ -2,37 +2,123 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "mixin";
 @import "var";
+@import "mixin";
 @import "reset";
-@import "layout";
 @import "typography";
-@import "color";
+@import "layout-fallback";
+@import "layout-flex";
 
-.grid {
+// unset fallback
+img.svg,
+.banner {
+  display: block;
+}
+
+.hidden,
+.font-list a span {
+  @extend %visuallyhidden;
+}
+
+@media (max-width: 767px) {
+  #sub {
+    border-top: 1px solid $border-color;
+  }
+}
+
+$names: boon boonbaan boonjot boontook f0nt vain;
+
+// insert logo
+.site-title:before {
+  content: "fontuni.logo\00A0";
+  font-family: BoonTook Mon;
+}
+
+.font-list {
+  @extend %clearfix;
+  margin-bottom: 2em;
 
   img {
     display: block;
     width: 100%;
   }
-  /* Required to make image fluid in IE */
-  img:not(.png) {
-    width: 100%;
-  }
-  .grid-item {
+  li {
     width: 20%;
+    float: left;
+    a {
+      display: block;
+      background: $dark;
+      opacity: 0.5;
+      margin-bottom: 1px;
+      margin-right: 1px;
+    }
+    a:hover {
+      opacity: 0.9 !important;
+    }
+    
+    a.vain {
+      background: lighten($dark, 30%);
+    }
+    @each $name in $names {
+      @include fontlist-color($name);
+    }
   }
-  .grid-item:first-child {
+  
+  li:first-child {
     width: 60%;
+    a { opacity: 0.75; }
   }
-  .x30 { width: 30%; }
-  .x40 { width: 40%; }
-  .x50 { width: 50%; }
-  .x60 { width: 60%; }
-  .x80 { width: 80%; }
 }
 
-.grid-item {
-  float: left;
-}			
+// banner bg color
+@each $name in $names {
+  @include svg-color($name);
+}
+
+// content pictures
+.float-left { float: left; margin-right: 1em; }
+.float-right { float: right; margin-left: 1em; }
+
+.float-left,
+.float-right {
+  max-width: 33%;
+  max-height: 50%;
+  small { display: block; }
+}
+
+.site-nav ul {
+  @extend %clearfix;
+  margin-bottom: 1em;
+  li a {
+    display: block;
+    padding: 0.3em 0.75em;
+    box-shadow: 0em 0.1em 0.2em lighten($dark, 50%);
+  }
+}
+
+ul.contact-list {
+  @extend %clearfix;
+  li {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 2% 0 0;
+    float: left;
+    a {
+      font-size: 1.5em;
+      line-height: 1em;
+      font-weight: 400;
+      display: block;
+      text-shadow: 0 1px 2px lighten($dark, 80%);
+      
+      i {
+        display: block;
+      }
+      span { 
+        @extend %visuallyhidden;
+      }
+    //&:hover { opacity: 0.5; }
+    }
+  }
+}
+
+small.copyrights { display: block; }

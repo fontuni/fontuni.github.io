@@ -10,13 +10,15 @@ url: "https://fontuni.com" # the base hostname & protocol for your site
 timezone: Asia/Bangkok
 
 email: uni@fontuni.com
-github_username: fontuni
-twitter_username: fontuni
-facebook_username: fontuni
+github_username: FontUni
+twitter_username: FontUni
+facebook_username: FontUni
 
 # Build settings
 permalink: /articles/:year-:month-:day-:title.html
 markdown: kramdown
+
+excerpt_separator: <!--more-->
 
 # Github
 github:
@@ -27,6 +29,7 @@ github:
 # Github Pages Sitemap
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 collections:
   fonts:
@@ -39,34 +42,23 @@ collections:
       values:
         layout: font
 
-exclude: [
-  CNAME,
-  README.md,
-  _fonts/boon/backup,
-  _fonts/boon/scripts,
-  _fonts/boon/sfd,
-  _fonts/boon/sources,
-  _fonts/boonbaan/backup,
-  _fonts/boonbaan/scripts,
-  _fonts/boonbaan/sfd,
-  _fonts/boonbaan/sources,
-  _fonts/boonjot/backup,
-  _fonts/boonjot/scripts,
-  _fonts/boonjot/sfd,
-  _fonts/boonjot/sources,
-  _fonts/boontook/backup,
-  _fonts/boontook/scripts,
-  _fonts/boontook/sfd,
-  _fonts/boontook/sources,
-  _fonts/vain/backup,
-  _fonts/vain/scripts,
-  _fonts/vain/sfd,
-  _fonts/vain/sources,
-  _fonts/f0nt/backup,
-  _fonts/f0nt/scripts,
-  _fonts/f0nt/sfd,
-  _fonts/f0nt/sources 
-]
+exclude:
+  - CNAME
+  - README.md
+  - "*.bak"
+  - "_fonts/*/backup/*"
+  - "_fonts/*/scripts/*"
+  - "_fonts/*/sfd/*"
+  - "_fonts/*/sources/*"
+  - "_fonts/*/fonts/unhinted/*"
+  - "_fonts/*/fonts/*.zip"
 
 # reveal.js url
 revealjs: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0
+
+# custom site nav
+navs:
+  - url: /about/
+    title: แนวคิดอยู่นี่
+  - url: /articles/
+    title: บทความอยู่นี่

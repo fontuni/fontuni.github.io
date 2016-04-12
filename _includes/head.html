@@ -3,9 +3,10 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/boontook/css/boontook-all.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/boon/css/boon-all.css" | prepend: site.baseurl }}">
@@ -16,7 +17,13 @@
       {% endfor %}
     {% endif %}
     
-    <!--<script src="/js/masonry.pkgd.min.js"></script>-->
+    {% if page.theme %}
+    <link rel="stylesheet" href="{{ page.theme | prepend: site.baseurl }}">
+    {% else %}
+    <link rel="stylesheet" href="{{ "/css/theme-boon.css" | prepend: site.baseurl }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

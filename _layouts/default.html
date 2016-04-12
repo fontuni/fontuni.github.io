@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
+{% include head.html %}
+  <body>
+    <div class="container">
 
-  {% include head.html %}
-
-  <body class="boon-400">
-
-    <div class="page-content">
-      <div class="wrapper">
+      <div id="main" class="page-content">
+        <div class="gutter">
         {{ content }}
+        </div>
       </div>
-    </div>
-    
-    <div class="site-info">
-      <div class="wrapper">
+
+      <div id="sub" class="sub-content">
+        <div class="gutter">
         {% include header.html %}
         {% include footer.html %}
+        </div>
       </div>
+
     </div>
-
+    <script src="/js/locl.js"></script>
   </body>
-
 </html>

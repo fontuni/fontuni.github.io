@@ -1,0 +1,84 @@
+---
+
+---
+@import "var";
+@import "mixin";
+
+$brand: #fff;
+$second: #8b0;
+
+body {
+  background: #8b0;
+  color: $dark;
+}
+
+$border-color: lighten(#8b0, 5%);
+
+hr {
+  border-bottom: 1px solid $border-color;
+}
+
+@media (max-width: 767px) {
+  #sub {
+    border-top: 1px solid $border-color;
+  }
+}
+
+a:link {
+  color: $brand;
+}
+
+a:visited {
+  color: $brand;
+}
+
+a:hover {
+  color: #ff0;
+}
+
+a:active {
+  color: $brand;
+}
+
+.site-title,
+h1.post-title,
+.tagline,
+ul.contact-list li a {
+  color: #fff;
+  text-shadow: 0 1px 2px lighten($dark, 50%);
+}
+
+a.site-title,
+ul.contact-list li a:hover {
+  color: #fff;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.site-nav ul {
+  li a {
+    color: #fff;
+    background: transparent;
+    box-shadow: 0em 0.1em 0.2em darken(#8b0, 10%);
+  }
+  li a:hover,
+  li.active a {
+    color: #8b0;
+    background: $brand;
+  }
+}
+
+h1,h2,h3,h4,h4,h6,
+.boonbaan h1.post-title,
+.boonbaan #download {
+  font-family: BoonBaan;
+  font-weight: 700;
+  //color: #fff;
+}
+
+.boonbaan .banner img { 
+  background: $brand;
+  opacity: 0.9;
+  box-shadow: 0em 0.5em 0.5em darken(#8b0, 10%);
+}

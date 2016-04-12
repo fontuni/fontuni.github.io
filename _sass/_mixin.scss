@@ -1,10 +1,66 @@
-@mixin clearfix() {
-  &:before,
-  &:after {
+%clearfix {
+  &:before, &:after {
     content: "";
     display: table;
   }
   &:after {
     clear: both;
+  }
+}
+
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+@mixin ot-feature($argument) {
+  @include vendor-prefix(font-feature-settings, #{$argument})
+}
+
+$colors: (
+  boon: $brand,
+  boonbaan: #8b0,
+  boonjot: #b3b,
+  boontook: #f60,
+  f0nt: #e06,
+  vain: #e00
+);
+
+@mixin fontlist-color($color) { 
+  @if map-has-key($colors, $color) {
+    a.#{$color}:hover,
+    a.#{$color}:focus,
+    a.#{$color}:active{
+      background: #{map-get($colors, $color)};
+      padding: 5%;
+      margin: -5%;
+      box-shadow: 0em 0.5em 0.5em lighten($dark, 60%); 
+    }
+    .#{$color} .banner img {
+      background: #{map-get($colors, $color)};
+      box-shadow: 0em 0.5em 0.5em lighten($dark, 60%); 
+    }
+  }
+}
+
+@mixin svg-color($color) { 
+  @if map-has-key($colors, $color) {
+    .#{$color} .banner img {
+      background: #{map-get($colors, $color)};
+      box-shadow: 0em 0.5em 0.5em lighten($dark, 60%); 
+    }
   }
 }

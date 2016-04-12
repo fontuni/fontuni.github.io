@@ -1,0 +1,88 @@
+---
+
+---
+@import "var";
+@import "mixin";
+
+$brand: #e06;
+
+body {
+  background: $light;
+  color: $dark;
+}
+
+$border-color: darken($light, 20%);
+
+hr {
+  border-bottom: 1px solid $border-color;
+}
+
+@media (max-width: 767px) {
+  #sub {
+    border-top: 1px solid $border-color;
+  }
+}
+
+a:link {
+  color: $brand;
+}
+
+a:visited {
+  color: $brand;
+}
+
+a:hover {
+  color: lighten($dark, 50%);
+}
+
+a:active {
+  color: $brand;
+}
+
+.site-title,
+h1.post-title,
+.tagline {
+  color: $brand;
+  text-shadow: 0 1px 2px lighten($dark, 80%);
+}
+
+a.site-title {
+  color: $dark;
+  &:hover {
+    color: lighten($dark, 50%);
+  }
+}
+
+.post-content {
+  img, object {
+    box-shadow: 0em 0.25em 0.5em lighten($dark, 80%); 
+  }
+}
+
+.site-nav ul {
+  li a {
+    color: $brand;
+    background: transparent;
+    box-shadow: 0em 0.1em 0.2em lighten($dark, 50%);
+  }
+  li a:hover,
+  li.active a {
+    color: #fff;
+    background: $brand;
+  }
+}
+
+ul.contact-list li a {
+  text-shadow: 0 1px 2px lighten($dark, 80%);
+}
+
+.f0nt h1.post-title,
+.f0nt #download,
+.f0nt .section-title {
+  font-family: F0nt;
+  font-weight: 900;
+}
+
+#download a {
+  text-shadow: 0 1px 2px lighten($dark, 80%);
+}

@@ -69,5 +69,5 @@ img {
 * { box-sizing: border-box; }
 
 .clearfix {
-  @include clearfix();
+  @extend %clearfix;
 }
