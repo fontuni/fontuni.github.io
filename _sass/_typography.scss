@@ -60,19 +60,23 @@ hr {
 }
 
 @media (max-width: 479px){
+  body { font-size: 13px; }
+}
+
+@media (min-width: 480px) and (max-width: 839px){
   body { font-size: 14px; }
 }
 
-@media (min-width: 480px) and (max-width: 767px){
+@media (min-width: 840px) and (max-width: 959px){
   body { font-size: 15px; }
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 960px) and (max-width: 1199px){
   body { font-size: 16px; }
 }
 
-@media (min-width: 1024px) {
-  body { font-size: 1.5vw; }
+@media (min-width: 1200px) {
+  body { font-size: 1.3vw; }
 }
 
 .site-description {
@@ -122,9 +126,9 @@ article,
     //list-style-type: thai;
   }
   
-  /*ul {
-    list-style-type: disc;
-  }*/
+  ul {
+    //list-style-type: disc;
+  }
   
   ul li {
     display: block;

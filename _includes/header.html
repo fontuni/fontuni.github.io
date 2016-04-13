@@ -7,6 +7,7 @@
     <h2 class="hidden">เมนูอยู่นี่</h2>
 
     <ul>
+      <li class="hidden"><a href="/">หน้าแรกอยู่นี่</a></li>
     {% for nav in site.navs %}
       {% if nav.url == page.dir %}
       <li class="active"><a href="#main">{{ nav.title }}</a></li>

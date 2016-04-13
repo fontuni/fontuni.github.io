@@ -1,3 +1,12 @@
+// unset fallback
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+// mobile vertical spacing
 @media (max-width: 479px){
   body { padding: 1em 1.5em; }
 }
