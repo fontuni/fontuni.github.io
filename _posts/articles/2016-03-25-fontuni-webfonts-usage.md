@@ -12,7 +12,7 @@ tag: ["css","webfont"]
 
 ตั้งใจจะเขียนบอกนักพัฒนาเว็บทั้งหลายไว้นานแล้วว่า “**คุณสามารถทดลองใช้งานฟอนต์เกือบทุกตัวของฟอนต์อยู่นี่ได้โดยไม่ต้องดาวน์โหลดครับ**” เพียงแค่เพิ่ม stylesheet กับ class ใน HTML ก็พอ วิธีการก็คล้ายๆ กับที่เราใช้ Google Fonts API นั่นแหละครับ (แต่ยังไม่มีวิธีเลือกใช้ฟอนต์แบบซับซ้อนเหมือนเขา) เช่น ถ้าต้องการใช้ [ฟอนต์บุญ](/boon/) ก็เรียก stylesheet ดังนี้
 
-~~~
+~~~html
 <link rel="stylesheet" href="https://fontuni.com/boon/css/boon-all.css">
 ~~~
 
@@ -20,24 +20,23 @@ tag: ["css","webfont"]
 
 ตัวอย่างแบบสุดโต่ง วิธีใช้งาน **ฟอนต์เวร** ในเว็บไซต์อื่นโดยไม่ต้องดาวน์โหลดฟอนต์และไม่ต้องเขียน CSS คือ [หน้าปล่อยฟอนต์เวรใน f0nt.com](//www.f0nt.com/release/vain/) ซึ่งผมมีสิทธิเพิ่มได้แค่เนื้อหาที่เป็น HTML แต่ต้องการอิมพอร์ตฟอนต์เวรเพื่อแสดงวิธีเซ็นเซอร์ของมัน
 
-<style>@import url(/vain/css/vain-all.css)</style>
-
-<p class="vain-mon" style="background:#222; color:#eee; padding:1em;">
+<p class="vain-mon" style="background:#333; color:#eee; padding:1em;">
+<style scoped>@import url(/vain/css/vain-all.css)</style>
 ข้อความนี้ไม่ต้องการให้คุณอ่าน เพราะผมอิมพอร์ตฟอนต์เวรมาใช้ ด้วย `vain-mon` class
 </p>
 
-~~~
-<style>@import url(https://fontuni.com/vain/css/vain-all.css)</style>
-
-<p class="vain-mon">...</p>
+~~~html
+<p class="vain-mon">
+<style scoped>@import url(https://fontuni.com/vain/css/vain-all.css)</style>
+...
+</p>
 ~~~
 
 ส่วนตัวอย่างการใช้งานหลายฟอนต์ในคราวเดียวกัน ก็เช่น
 
-<style>@import url(/boonbaan/css/boonbaan-all.css)</style>
-<style>@import url(/boontook/css/boontook-all.css)</style>
-
-<p style="background:#222; color:#eee; padding:1em;">
+<p style="background:#333; color:#eee; padding:1em;">
+<style scoped>@import url(/boonbaan/css/boonbaan-all.css)</style>
+<style scoped>@import url(/boontook/css/boontook-all.css)</style>
 <span class="boonbaan-700i">ข้อความนี้อิมพอร์ตฟอนต์บุญบ้านตัวเอนมาใช้ ด้วย boonbaan-700i class</span>
 <span class="boon-300">ข้อความนี้อิมพอร์ตฟอนต์บุญตัวบางมาใช้ ด้วย boon-300 class</span>
 <span class="boontook">ข้อความนี้อิมพอร์ตฟอนต์บุญถึกตัวตรงมาใช้ ด้วย boontook class</span>
@@ -46,7 +45,7 @@ tag: ["css","webfont"]
 
 เหตุผลที่ผมเขียน stylesheet ไว้สำหรับฟอนต์ทุกตระกูลที่พร้อมเผยแพร่ ก็เพื่อใช้งานในเว็บไซต์ตัวเองเป็นหลัก ให้มันแสดงผลเว็บฟอนต์ในแต่ละหน้าโปรเจ็คต์แตกต่างกันไป (ส่วนมากเป็นตัวพาดหัว) แล้วที่เขียนบอกไว้ตรงนี้ก็เพราะมันอาจมีประโยชน์กับนักพัฒนาเว็บคนอื่นด้วยครับ
 
-และผมก็ไม่ได้ใจดีแจกแบนด์วิดธ์ฟรีด้วยตัวเองแต่อย่างใด เพราะทุกอย่างในฟอนต์อยู่นี่อยู่ใน [GitHub](https://github.com/) ทั้งหมด! [แค่แยกแต่ละโปรเจ็คต์เป็น sub-module](https://github.com/fontuni/fontuni.github.io) แล้วใช้ [GitHub Pages](https://pages.github.com/) (หรือ [Jekyll](https://jekyllrb.com/)) แปลงเป็นเว็บไซต์เท่านั้นเอง แปลว่าวิธีการนี้จะใช้ไม่ได้ก็ต่อเมื่อ GitHub ล่ม ซึ่งคงไม่บ่อย (หรือ [CloudFlare](https://www.cloudflare.com/) ล่ม เพราะผมใช้ CDN Cache ของเขาอยู่)
+และผมก็ไม่ได้ใจดีแจกแบนด์วิดธ์ฟรีด้วยตัวเองแต่อย่างใด เพราะทุกอย่างในฟอนต์อยู่นี่อยู่ใน [GitHub](https://github.com/) ทั้งหมด! [แค่แยกแต่ละโปรเจ็คต์เป็น submodule](https://github.com/fontuni/fontuni.github.io) แล้วใช้ [GitHub Pages](https://pages.github.com/) (หรือ [Jekyll](https://jekyllrb.com/)) แปลงเป็นเว็บไซต์เท่านั้นเอง แปลว่าวิธีการนี้จะใช้ไม่ได้ก็ต่อเมื่อ GitHub ล่ม ซึ่งคงไม่บ่อย (หรือ [CloudFlare](https://www.cloudflare.com/) ล่ม เพราะผมใช้ระบบ CDN cache ของเขาอยู่)
 
 ### ไฟล์ CSS ที่สามารถอิมพอร์ตไปใช้ได้ตอนนี้ คือ
 {: .section-title }

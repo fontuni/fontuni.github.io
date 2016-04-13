@@ -2,12 +2,20 @@
 
   <h2 class="hidden">ติดต่ออยู่นี่</h2>
   
-  <ul class="contact-list">
+  <ul class="contact-list boonicon">
+    
+    {% if site.github_username %}
+    <li>
+      <a href="https://github.com/{{ site.github_username }}" title="github.com/{{ site.github_username }}">
+        github
+      </a>
+    </li>
+    {% endif %}
     
     {% if site.facebook_username %}
     <li>
       <a href="https://facebook.com/{{ site.facebook_username }}" title="facebook.com/{{ site.facebook_username }}">
-        <i class="fa fa-facebook-square"></i> <span>facebook</span>
+        facebook
       </a>
     </li>
     {% endif %}
@@ -15,15 +23,7 @@
     {% if site.twitter_username %}
     <li>
       <a href="https://twitter.com/{{ site.twitter_username }}" title="twitter.com/{{ site.twitter_username }}">
-        <i class="fa fa-twitter-square"></i> <span>twitter</span>
-      </a>
-    </li>
-    {% endif %}
-
-    {% if site.github_username %}
-    <li>
-      <a href="https://github.com/{{ site.github_username }}" title="github.com/{{ site.github_username }}">
-        <i class="fa fa-github-square"></i> <span>github</span>
+        twitter
       </a>
     </li>
     {% endif %}
@@ -31,7 +31,7 @@
     {% if site.email %}
     <li>
       <a href="mailto:{{ site.email }}" title="{{ site.email }}">
-        <i class="fa fa-envelope-square"></i> <span>email</span>
+        email
       </a>
     </li>
     {% endif %}

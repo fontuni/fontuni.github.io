@@ -6,8 +6,10 @@
 @import "mixin";
 @import "reset";
 @import "typography";
+@import "boonicon";
 @import "layout-fallback";
 @import "layout-flex";
+@import "syntax-highlighting";
 
 // unset fallback
 img.svg,
@@ -29,10 +31,17 @@ img.svg,
 $names: boon boonbaan boonjot boontook f0nt vain;
 
 // insert logo
-.site-title:before {
-  content: "fontuni.logo\00A0";
-  font-family: BoonTook Mon;
-}
+
+//.site-title:before {
+//  content: "fontuni.logo\00A0";
+//  font-family: BoonTook Mon;
+//}
+
+//.site-title:before {
+//content: "fontuni\00A0";
+//  font-family: BoonIcon;
+//  font-weight: 400;
+//}
 
 .font-list {
   @extend %clearfix;
@@ -143,3 +152,9 @@ small.copyrights { display: block; }
   a,a:link,a:visited { color: #d00; }
 }
 
+// BoonIcon
+.boonicon {
+  font-family: "BoonIcon";
+  font-weight: 400;
+  font-style: normal; 
+}
