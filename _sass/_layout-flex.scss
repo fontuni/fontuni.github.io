@@ -26,9 +26,6 @@
   }
 }
 
-// flex layout
-// todo: cross browser prefix
-
 // 1+1+2+3+5+8 = 20
 $columns: 20;
 $colwidth: 100vw / 20;
@@ -38,16 +35,16 @@ $colwidth: 100vw / 20;
   html {
     overflow-y: scroll;
   }
-  
+
   body {
     padding: 0;
   }
-  
+
   .container {
     display: flex;
     min-height: 100vh;
   }
-  
+
   #main {
     //background: tomato;
     flex: 0 0 65%;
@@ -60,7 +57,7 @@ $colwidth: 100vw / 20;
     min-height: 100vh;
     margin-top: 0;
   }
-  
+
   #main .gutter,
   #sub .gutter {
     //padding: 1.5em 3em;
@@ -78,6 +75,13 @@ $colwidth: 100vw / 20;
   text-align: center;
 }
 
-.post-meta { 
-  clear:both; 
+.post-meta {
+  clear:both;
 }
+
+// flex layout
+// todo: cross browser prefix
+/* Internet Explorer 10+, Microsoft Edge Browser */
+// https://jeffclayton.wordpress.com/2015/04/07/css-hacks-for-windows-10-and-spartan-browser-preview/
+
+_:-ms-lang(x), #sub { position: relative; }
