@@ -1,14 +1,17 @@
 # Site settings
-encoding: utf-8
+encoding: UTF-8
+lang: th
+locale: th_TH
 title: สำนักอักขระฟอนต์อยู่นี่
 short_title: ฟอนต์อยู่นี่
 tagline: ฟอนต์เกิดใหม่บ้างในบางเวลา ...
 description: > # this means to ignore newlines until "baseurl:"
-  สำนักอักขระฟอนต์อยู่นี่  มุ่งผลิตฟอนต์เสรีให้แสดงผลได้ถูกต้องและดีพอ เน้นมาตรฐานยูนิโค้ดและโอเพ่นไทป์ เพื่อให้ทุกคนมีอิสระในการใช้งาน, แจกจ่าย หรือดัดแปลงได้อย่างสบายใจ
+  สำนักอักขระฟอนต์อยู่นี่  มุ่งผลิตฟอนต์เสรีให้แสดงผลได้ถูกต้องและดีพอ เน้นมาตรฐานยูนิโค้ดและโอเพ่นไทป์ เพื่อให้ทุกคนมีอิสระในการใช้งาน แจกจ่าย หรือดัดแปลงได้อย่างสบายใจ
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://fontuni.com" # the base hostname & protocol for your site
 timezone: Asia/Bangkok
 
+author: "Sungsit Sawaiwan"
 email: uni@fontuni.com
 github_username: FontUni
 twitter_username: FontUni
@@ -62,3 +65,13 @@ navs:
     title: แนวคิดอยู่นี่
   - url: /articles/
     title: บทความอยู่นี่
+
+# FB
+fb_appid: 1078870822159632
+twitter_id: 3268876453
+
+# Default banner (1200x630)
+cover:
+  path: /images/fontuni-cover.jpg
+  width: 2400
+  height: 1260
