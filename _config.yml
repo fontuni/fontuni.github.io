@@ -72,6 +72,6 @@ twitter_id: 3268876453
 
 # Default banner (1200x630)
 cover:
-  path: /images/fontuni-cover.jpg
-  width: 2400
-  height: 1260
+  path: /images/fontuni-cover-1200x630.jpg
+  width: 1200
+  height: 630
