@@ -2,7 +2,7 @@
 layout: default
 title: ฟอนต์เกิดใหม่บ้างในบางเวลา ...
 cover:
-  path: /f0nt/images/fontuni-cover-1200x630.jpg
+  path: /images/fontuni-cover-1200x630.jpg
 ---
 
 # {{ page.title }}
