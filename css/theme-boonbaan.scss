@@ -78,8 +78,19 @@ h1,h2,h3,h4,h4,h6,
   //color: #fff;
 }
 
-.boonbaan .banner img { 
+.boonbaan .banner img {
   background: $brand;
   opacity: 0.9;
   box-shadow: 0em 0.5em 0.5em darken(#8b0, 10%);
+}
+
+.sharer a {
+  color: #8b0;
+  background: $brand;
+  box-shadow: 0em 0.1em 0.2em darken(#8b0, 10%);
+  opacity: 1;
+  &:hover {
+    color: #fff;
+    background: #8b0;
+  }
 }

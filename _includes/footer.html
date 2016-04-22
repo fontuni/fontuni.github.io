@@ -1,33 +1,33 @@
 <footer class="site-footer">
 
   <h2 class="hidden">ติดต่ออยู่นี่</h2>
-  
+
   <ul class="contact-list boonicon">
-    
+
     {% if site.github_username %}
     <li>
-      <a href="https://github.com/{{ site.github_username }}" title="github.com/{{ site.github_username }}">
+      <a target="_blank" href="https://github.com/{{ site.github_username }}" title="github.com/{{ site.github_username }}">
         github
       </a>
     </li>
     {% endif %}
-    
+
     {% if site.facebook_username %}
     <li>
-      <a href="https://facebook.com/{{ site.facebook_username }}" title="facebook.com/{{ site.facebook_username }}">
+      <a target="_blank" href="https://facebook.com/{{ site.facebook_username }}" title="facebook.com/{{ site.facebook_username }}">
         facebook
       </a>
     </li>
     {% endif %}
-    
+
     {% if site.twitter_username %}
     <li>
-      <a href="https://twitter.com/{{ site.twitter_username }}" title="twitter.com/{{ site.twitter_username }}">
+      <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}" title="twitter.com/{{ site.twitter_username }}">
         twitter
       </a>
     </li>
     {% endif %}
-    
+
     {% if site.email %}
     <li>
       <a href="mailto:{{ site.email }}" title="{{ site.email }}">
@@ -37,9 +37,9 @@
     {% endif %}
 
   </ul>
-  
+
   <hr>
-  
+
   <small class="copyrights">&copy; 2015-2016 <a href="https://fontuni.com/">fontuni.com</a></small>
 
 </footer>

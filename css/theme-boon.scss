@@ -54,7 +54,7 @@ a.site-title {
 
 .post-content {
   img, object {
-    box-shadow: 0em 0.25em 0.5em lighten($dark, 50%); 
+    box-shadow: 0em 0.25em 0.5em lighten($dark, 50%);
   }
 }
 
@@ -77,7 +77,7 @@ h1,h2,h3,h4,h4,h6,
   font-weight: 600;
 }
 
-.banner img { 
+.banner img {
   background: $brand;
   opacity: 0.9;
 }
@@ -86,8 +86,21 @@ h1,h2,h3,h4,h4,h6,
   color: $brand;
   text-shadow: 0 1px 2px lighten($dark, 80%);
 }
-#download a:hover { color: lighten($dark, 50%); }
+#download a:hover {
+  color: lighten($dark, 50%);
+}
 
-ul.contact-list li a:hover {
+ul.contact-list li a:hover,
+.sharer a:hover {
   color: $brand;
+}
+
+.sharer a {
+  color: #fff;
+  background: $brand;
+  box-shadow: 0em 0.1em 0.2em lighten($dark, 50%);
+  &:hover {
+    color: $dark;
+    background: transparent;
+  }
 }

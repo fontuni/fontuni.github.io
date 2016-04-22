@@ -57,14 +57,14 @@ $names: boon boonbaan boonjot boontook f0nt vain;
     a {
       display: block;
       background: $dark;
-      opacity: 0.5;
+      opacity: 0.8;
       //margin-bottom: 1px;
       //margin-right: 1px;
     }
     a:hover {
       opacity: 0.9 !important;
     }
-    
+
     a.vain {
       background: lighten($dark, 30%);
     }
@@ -74,7 +74,7 @@ $names: boon boonbaan boonjot boontook f0nt vain;
   }
 
   li:first-child a {
-    opacity: 0.75;
+    opacity: 1;
   }
 
   li:first-child {
@@ -82,10 +82,10 @@ $names: boon boonbaan boonjot boontook f0nt vain;
   }
 
   li:nth-child(3n+1) a {
-    background: lighten($dark,10%);
+    background: lighten($dark,30%);
   }
   li:nth-child(3n+2) a {
-    background: lighten($dark,20%);
+    background: lighten($dark,50%);
   }
 }
 
@@ -128,11 +128,11 @@ ul.contact-list {
       font-weight: 400;
       display: block;
       text-shadow: 0 1px 2px lighten($dark, 80%);
-      
+
       i {
         display: block;
       }
-      span { 
+      span {
         @extend %visuallyhidden;
       }
     //&:hover { opacity: 0.5; }
@@ -148,7 +148,7 @@ small.copyrights { display: block; }
   color: $dark;
   padding: 1em 1.5em;
   border: 2px dashed #d00;
-  
+
   a,a:link,a:visited { color: #d00; }
 }
 
@@ -156,5 +156,29 @@ small.copyrights { display: block; }
 .boonicon {
   font-family: "BoonIcon";
   font-weight: 400;
-  font-style: normal; 
+  font-style: normal;
+}
+
+// Sharer
+.sharer {
+  @extend %clearfix;
+  a {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+  }
+}
+
+.home .sharer a {
+  color: $dark;
+  background: #fff;
+  box-shadow: 0em 0.1em 0.2em lighten($dark, 50%);
+  &:hover {
+    color: #fff;
+    background: $brand;
+  }
+}
+
+.home .copyrights a {
+  color: $dark;
+  &:hover { color: $brand; }
 }

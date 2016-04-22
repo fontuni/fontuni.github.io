@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
 {% include head.html %}
-  <body>
+  <body{% if page.url == "/" %} class="home"{% endif %}>
     <div class="container">
 
       <div id="main" class="page-content">
@@ -11,6 +11,7 @@
         <![endif]-->
 
         {{ content }}
+        {% include share.html %}
         </div>
       </div>
 
