@@ -2,13 +2,14 @@
 layout: default
 title: บทความอยู่นี่
 permalink: /articles/
+excerpt: "มีสาระบ้าง ไร้สาระบ้าง ก็จะเขียนเรื่องเกี่ยวกับฟอนต์ไว้ที่นี่"
 ---
 
 <div class="articles">
 
   <h1 class="post-title">{{ page.title }}</h1>
 
-  <p>มีสาระบ้าง ไร้สาระบ้าง ก็จะเขียนไว้ที่นี่</p>
+  <p>{{ page.excerpt }}</p>
 
   <ul class="post-list">
     {% for post in site.posts %}
