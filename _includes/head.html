@@ -1,5 +1,5 @@
 <head>
-  <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta charset="{{ site.encoding }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
@@ -15,7 +15,7 @@
   <meta property="og:type" content="article">
   {% endif %}
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ page.title }}{% endif %}">
   <meta property="og:locale" content="{% if page.locale %}{{ page.locale }}{% endif %}{{ site.locale }}">
 
