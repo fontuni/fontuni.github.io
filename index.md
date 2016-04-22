@@ -2,9 +2,7 @@
 layout: default
 title: ฟอนต์เกิดใหม่บ้างในบางเวลา ...
 cover:
-  path: /f0nt/images/fontuni-cover.jpg
-  width: 2400
-  height: 1260
+  path: /f0nt/images/fontuni-cover-1200x630.jpg
 ---
 
 # {{ page.title }}
