@@ -61,7 +61,7 @@ a.site-title {
   li a {
     color: $brand;
     background: transparent;
-    box-shadow: 0em 0.1em 0.2em #000;
+    box-shadow: 0em 0.1em 0.2em #111;
     font-weight: 600;
   }
   li a:hover,
@@ -82,7 +82,7 @@ h1,h2,h3,h4,h4,h6,
   background: $brand;
   opacity: 0.9;
   transition: .3s;
-  box-shadow: 0em 0.5em 0.5em #000;
+  box-shadow: 0em 0.5em 0.5em #111;
   &:hover { background: $second; }
 }
 
@@ -98,7 +98,7 @@ ul.contact-list li a:hover {
 .sharer a {
   color: #fff;
   background: $brand;
-  box-shadow: 0em 0.1em 0.2em #000;
+  box-shadow: 0em 0.1em 0.2em #111;
   &:hover {
     color: $dark;
     background: $second;
