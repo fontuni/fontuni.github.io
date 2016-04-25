@@ -58,11 +58,11 @@ $names: boon boonbaan boonjot boontook f0nt vain;
       display: block;
       background: $dark;
       opacity: 0.8;
-      //margin-bottom: 1px;
-      //margin-right: 1px;
     }
-    a:hover {
+    a:hover,
+    a:active {
       opacity: 0.9 !important;
+      z-index: 99;
     }
 
     a.vain {
@@ -82,10 +82,10 @@ $names: boon boonbaan boonjot boontook f0nt vain;
   }
 
   li:nth-child(3n+1) a {
-    background: lighten($dark,30%);
+    background: lighten($dark,13%);
   }
   li:nth-child(3n+2) a {
-    background: lighten($dark,50%);
+    background: lighten($dark,21%);
   }
 }
 
@@ -181,4 +181,13 @@ small.copyrights { display: block; }
 .home .copyrights a {
   color: $dark;
   &:hover { color: $brand; }
+}
+
+.boontook .logo,
+.boontook-mon .log {
+  -webkit-font-feature-settings: "ss18" 0;
+  -moz-font-feature-settings: "ss18" 0;
+  -ms-font-feature-settings: "ss18" 0;
+  -o-font-feature-settings: "ss18" 0;
+  font-feature-settings: "ss18" 0;
 }

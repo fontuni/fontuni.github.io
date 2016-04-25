@@ -49,6 +49,7 @@ exclude:
   - CNAME
   - README.md
   - "*.bak"
+  - "*.fea"
   - "_fonts/*/backup/*"
   - "_fonts/*/scripts/*"
   - "_fonts/*/sfd/*"

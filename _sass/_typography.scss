@@ -9,6 +9,7 @@ body {
   @include ot-feature('"locl"');
   @include vendor-prefix(font-kerning, normal);
   @include vendor-prefix(font-variant, common-ligatures);
+  @include ot-feature('"ss18"');
 }
 
 h1,
