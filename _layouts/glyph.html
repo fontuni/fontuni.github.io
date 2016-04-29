@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-{% if page.layout == "glyph" %}
 {% include head-glyph.html %}
-{% else %}
-{% include head.html %}
-{% endif %}
   <body{% if page.url == "/" %} class="home"{% endif %}>
     <div class="container">
 
@@ -14,7 +10,28 @@
         <p class="warning">ฟอนต์อยู่นี่ <strong>ไม่รองรับเว็บบราวเซอร์รุ่นเก่าที่คุณใช้งานอยู่</strong> เพื่อชีวิตที่ดีกว่า <a href="http://browsehappy.com/">ดาวน์โหลดบราวเซอร์รุ่นใหม่มาใช้ดีกว่านะครับ</a></p>
         <![endif]-->
 
-        {{ content }}
+        <div class="glyphlog {% if page.font %}{{ page.font }}{% endif %}">
+
+          <header class="post-header">
+            <h1 class="post-title">{{ page.font }} : {{ page.title }}</h1>
+          </header>
+
+          <div class="post-content" >
+            <p><a href="{{ page.image.png }}" title="View bigger image"><img src="{{ page.image.svg }}" alt="{{ page.title }}"></a></p>
+
+            {{ content }}
+          </div>
+
+          <footer class="post-meta">
+            <p>
+              {{ page.date | date: "%b %d %Y" }} •
+              {% if page.font %}<a href="/{{ page.font | downcase }}/">{{ page.font }}</a> project by {% endif %}
+              {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
+            </p>
+          </footer>
+
+        </div>
+
         {% include share.html %}
         </div>
       </div>
@@ -30,3 +47,5 @@
     <script src="/js/locl.js"></script>
   </body>
 </html>
+
+

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: กวีแกรมสำหรับฟอนต์ไทย
-author: สังศิต ไสววรรณ
 date: 2015/07/12 14:45 +0700
 tag: ["poetgram","pangram"]
 ---

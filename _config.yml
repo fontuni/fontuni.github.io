@@ -38,12 +38,23 @@ collections:
   fonts:
     output: true
     permalink: /:path.html
-    defaults:
-      scope:
-        path: ""
-        type: font
-      values:
-        layout: font
+  glyphs:
+    output: true
+    permalink: /glyphs/:path.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: fonts
+    values:
+      layout: "font"
+  -
+    scope:
+      path: ""
+      type: "glyphs"
+    values:
+      layout: "glyph"
 
 exclude:
   - CNAME
@@ -66,6 +77,8 @@ navs:
     title: แนวคิดอยู่นี่
   - url: /articles/
     title: บทความอยู่นี่
+  - url: /glyphs/
+    title: อักขระอยู่นี่
 
 # FB
 fb_appid: 1078870822159632

@@ -1,0 +1,38 @@
+<head>
+  {% capture title %}{{ page.font }} : {{ page.title }} | {{ site.title }}{% endcapture %}
+  <title>{{ title }}</title>
+  <meta charset="{{ site.encoding }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
+  {% capture description %}{{ page.title }} from {{ page.font }} project by {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %} • {{ page.date | date: "%b %d %Y" }}{% endcapture %}
+  <meta name="description" content="{{ description }}">
+
+  <meta property="fb:app_id" content="{{ site.fb_appid }}">
+  <meta property="og:site_name" content="{{ site.title}}">
+  <meta property="og:type" content="fontuni:glyph">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:locale" content="{% if page.locale %}{{ page.locale }}{% endif %}{{ site.locale }}">
+
+  <meta property="og:image" content="{{ page.url | replace:'.html','.png' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:image:width" content="{% if page.image.width %}{{ page.image.width }}{% else %}{{ site.image.width }}{% endif %}">
+  <meta property="og:image:height" content="{% if page.image.height %}{{ page.image.height }}{% else %}{{ site.image.height }}{% endif %}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:account_id" content="{{ site.twitter_id }}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/boontook/css/boontook-all.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/boon/css/boon-all.css" | prepend: site.baseurl }}">
+  {% if page.css %}{% for css in page.css %}
+  <link rel="stylesheet" href="{{ css | prepend: site.baseurl }}">
+  {% endfor %}{% endif %}
+  {% if page.theme %}
+  <link rel="stylesheet" href="{{ page.theme | prepend: site.baseurl }}">
+  {% else %}
+  <link rel="stylesheet" href="{{ "/css/theme-boon.css" | prepend: site.baseurl }}">
+  {% endif %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>

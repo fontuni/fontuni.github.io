@@ -11,7 +11,7 @@ excerpt: "สำนักอักขระฟอนต์อยู่นี่ 
 {: .hidden }
 
 <ol class="font-list">
-  {% assign fonts = site.fonts | sort: 'date') | reverse %}
+  {% assign fonts = site.fonts | sort: 'date' | reverse %}
   {% for font in fonts %}
     {% if font.thumbnail %}
       <li>

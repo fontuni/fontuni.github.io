@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "วิธีออกแบบฟอนต์ลายมือด้วย FontForge"
-author: สังศิต ไสววรรณ
 date: 2015/11/04 21:00 +0700
 tag: ["fontforge", "tutorial"]
 ---

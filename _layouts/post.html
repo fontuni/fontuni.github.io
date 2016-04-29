@@ -13,8 +13,8 @@ layout: default
 
   <footer class="post-meta">
     <p>
-      {{ page.date | date: "%b %d %Y" }}
-      {% if page.author %} • {{ page.author }}{% endif %}
+      {{ page.date | date: "%b %d %Y" }} •
+      {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}
       {% if page.meta %} • {{ page.meta }}{% endif %}
     </p>
     <p id="license">

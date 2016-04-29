@@ -1,0 +1,29 @@
+---
+layout: default
+title: อักขระอยู่นี่
+permalink: /glyphs/
+excerpt: "บันทึกรูปภาพต้นแบบตัวอักขระของฟอนต์ต่างๆ (GlyphLog)"
+---
+
+<div class="articles">
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  <p>{{ page.excerpt }}</p>
+
+  <ul class="post-list">
+    {% assign glyphs = site.glyphs | sort: 'date' | reverse %}
+    {% for glyph in glyphs %}
+      <li>
+        <span class="post-meta">{{ glyph.date | date: "%b %-d, %Y" }}</span>
+        {% capture title %}{{ glyph.font }} : {{ glyph.title }}{% endcapture %}
+        <h2>
+          <a class="post-link" href="{{ glyph.url | prepend: site.baseurl }}">{{ title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/glyphs/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
