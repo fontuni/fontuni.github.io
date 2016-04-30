@@ -79,6 +79,8 @@ navs:
     title: บทความอยู่นี่
   - url: /glyphs/
     title: อักขระอยู่นี่
+  - url: http://fontuni.bigcartel.com/
+    title: ร้านค้าอยู่นี่
 
 # FB
 fb_appid: 1078870822159632

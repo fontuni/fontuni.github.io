@@ -59,14 +59,15 @@ ul.contact-list li a:hover {
 
 .site-nav ul {
   li a {
-    color: #fff;
-    background: transparent;
+    color: #8b0;
+    background: $brand;
     box-shadow: 0em 0.1em 0.2em darken(#8b0, 10%);
+    opacity: 0.9;
   }
   li a:hover,
   li.active a {
-    color: #8b0;
-    background: $brand;
+    color: #fff;
+    background: transparent;
   }
 }
 
@@ -93,4 +94,8 @@ h1,h2,h3,h4,h4,h6,
     color: #fff;
     background: #8b0;
   }
+}
+
+a.supporter img {
+  box-shadow: 0em 0.1em 0.2em darken(#8b0, 10%);
 }
