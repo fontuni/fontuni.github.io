@@ -34,7 +34,7 @@
 
 <body>
 
-{% if page.fontfamily && page.fontstyles %}
+{% if page.fontfamily and page.fontstyles %}
   <form class="select-form print-hide">
     <select name="font-selector" id="font-selector" onchange="fontSelector()">
     {% for style in page.fontstyles %}
