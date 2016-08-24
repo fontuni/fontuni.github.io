@@ -94,5 +94,5 @@ Gnome รองรับจอ HiDPI ได้ดี เลยใช้ควา
 ## เพิ่มเติม
 {: .section-title #section-03 }
 
-[คุณอนุทิน วงศ์สรรคกร](http://anuthin.org/) ให้ [ข้อมูลเพิ่มเติมมาทางทวิตเตอร์](https://twitter.com/anuthin/status/767944392577396736) ว่า [คุณภาณุวัฒน์ อู้สกุลวัฒนา](https://twitter.com/panuwatbank) Senior Type Designer แห่ง Cadson® Demak เป็นผู้ออกแบบฟอนต์เมล็ดพันธุ์ครับ ขอบคุณครับ
+[คุณอนุทิน วงศ์สรรคกร](http://anuthin.org/) ให้ [ข้อมูลเพิ่มเติมมาทางทวิตเตอร์](https://twitter.com/anuthin/status/767944392577396736) ว่า [คุณภาณุวัฒน์ อู้สกุลวัฒนา](https://twitter.com/panuwatbank) Senior Type Designer แห่ง Cadson® Demak เป็นผู้ออกแบบฟอนต์เมล็ดพันธุ์ครับ ขอขอบคุณไว้ ณ ที่นี้ด้วย (ตอนเขียนรีวิวเริ่มแรกผมยังไม่ได้เปิดดูข้างในไฟล์ฟอนต์ เลยไม่รู้ว่าใครเป็นผู้ออกแบบฟอนต์ครับ)
 
