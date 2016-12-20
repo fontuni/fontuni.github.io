@@ -21,25 +21,25 @@ excerpt: "ช่วงนี้ผมไม่ค่อยได้ทำฟอ�
 {: .section-title #section-01 }
 
 [![SeedThemes Modified Homepage](/images/articles/maledpan-seedthemes-sq.png)](/images/articles/maledpan-seedthemes-sq.png)<br>
-<small>Fig 1. สมมติว่า **ซี้ดธีมส์** ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 1 : สมมติว่า **ซี้ดธีมส์** ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 [![Cadson® Demak Modified Content](/images/articles/maledpan-cadsondemak.png)](/images/articles/maledpan-cadsondemak.png)<br>
-<small>Fig 2. สมมติว่า **คัดสรรดีมาก** ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 2 : สมมติว่า **คัดสรรดีมาก** ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 [![Google Modified Search](/images/articles/maledpan-google.png)](/images/articles/maledpan-google.png)<br>
-<small>Fig 3. สมมติว่า **กูเกิ้ล** ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 3 : สมมติว่า **กูเกิ้ล** ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 [![F0nt Modified Homepage](/images/articles/maledpan-f0nt.png)](/images/articles/maledpan-f0nt.png)<br>
-<small>Fig 4. สมมติว่า **ฟ๐นต์** ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 4 : สมมติว่า **ฟ๐นต์** ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 [![Pantip Modified Homepage](/images/articles/maledpan-pantip.png)](/images/articles/maledpan-pantip.png)<br>
-<small>Fig 5. สมมติว่า **พันทิป** ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 5 : สมมติว่า **พันทิป** ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 [![Blognone Modified Homepage](/images/articles/maledpan-blognone.png)](/images/articles/maledpan-blognone.png)<br>
-<small>Fig 6. สมมติว่า **บล็อกนัน** ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 6 : สมมติว่า **บล็อกนัน** ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 [![FontUni Modified Content](/images/articles/maledpan-fontuni.png)](/images/articles/maledpan-fontuni.png)<br>
-<small>Fig 7. สมมติว่า **ฟอนต์อยู่นี่** ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 7 : สมมติว่า **ฟอนต์อยู่นี่** ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 ## สมมติกันพอหอมปากหอมคอแล้ว ก็มาดูการใช้งานจริงในระบบปฏิบัติการบ้าง
 {: .section-title #section-02 }
@@ -51,38 +51,38 @@ excerpt: "ช่วงนี้ผมไม่ค่อยได้ทำฟอ�
 เนื่องจาก Mate รองรับจอความละเอียดสูง (HiDPI) กับแล็ปท็อปที่ผมใช้อยู่ได้ไม่ดีเท่าไหร่ เลยต้องใช้ความละเอียดแค่ 2048x1152
 
 [![Ubuntu Mate System](/images/articles/mate-sys.png)](/images/articles/mate-sys.png)<br>
-<small>Fig 8. เมื่อ Ubuntu Mate ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 8 : เมื่อ Ubuntu Mate ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 [![Ubuntu Mate Control Center](/images/articles/mate-ctl.png)](/images/articles/mate-ctl.png)<br>
-<small>Fig 9. Ubuntu Mate Control Center</small>
+<small>Fig. 9 : Ubuntu Mate Control Center</small>
 
 [![Ubuntu Mate File Manager](/images/articles/mate-file.png)](/images/articles/mate-file.png)<br>
-<small>Fig 10. Ubuntu Mate File Manager</small>
+<small>Fig. 10 : Ubuntu Mate File Manager</small>
 
 [![Ubuntu Mate Calendar](/images/articles/mate-calendar.png)](/images/articles/mate-calendar.png)<br>
-<small>Fig 11. Ubuntu Mate Calendar</small>
+<small>Fig. 11 : Ubuntu Mate Calendar</small>
 
 [![Ubuntu Mate Desktop](/images/articles/mate-desktop.jpg)](/images/articles/mate-desktop.jpg)<br>
-<small>Fig 12. Ubuntu Mate Desktop</small>
+<small>Fig. 12 : Ubuntu Mate Desktop</small>
 
 ### Archlinux Gnome (Boonux)
 
 Gnome รองรับจอ HiDPI ได้ดี เลยใช้ความละเอียดสูงสุดที่ 3840x2160 (UHD/4K) ไปเลย ฟอนต์ก็เลยคมชัดขึ้นเยอะ
 
 [![Archlinux Gnome System](/images/articles/gnome-sys.png)](/images/articles/gnome-sys.png)<br>
-<small>Fig 13. เมื่อ Archlinux Gnome ใช้ฟอนต์เมล็ดพันธุ์</small>
+<small>Fig. 13 : เมื่อ Archlinux Gnome ใช้ฟอนต์เมล็ดพันธุ์</small>
 
 [![Archlinux Gnome Menu](/images/articles/gnome-menu.png)](/images/articles/gnome-menu.png)<br>
-<small>Fig 14. Archlinux Gnome Menu</small>
+<small>Fig. 14 : Archlinux Gnome Menu</small>
 
 [![Archlinux Gnome File Manager](/images/articles/gnome-file.png)](/images/articles/gnome-file.png)<br>
-<small>Fig 15. Archlinux Gnome File Manager</small>
+<small>Fig. 15 : Archlinux Gnome File Manager</small>
 
 [![Archlinux Gnome Calendar](/images/articles/gnome-calendar.png)](/images/articles/gnome-calendar.png)<br>
-<small>Fig 16. Archlinux Gnome Calendar</small>
+<small>Fig. 16 : Archlinux Gnome Calendar</small>
 
 [![Archlinux Gnome Apps](/images/articles/gnome-apps.jpg)](/images/articles/gnome-apps.jpg)<br>
-<small>Fig 17. Archlinux Gnome Apps</small>
+<small>Fig. 17 : Archlinux Gnome Apps</small>
 
 ## สรุปว่า ...
 {: .section-title #section-03 }
@@ -92,7 +92,7 @@ Gnome รองรับจอ HiDPI ได้ดี เลยใช้ควา
 ถ้าโอกาสหน้ามีเวลาก็คงได้ส่องดูฟีเจอร์ข้างในฟอนต์ ตอนนี้เอาแค่นี้ก่อนนะครับ
 
 ## เพิ่มเติม
-{: .section-title #section-03 }
+{: .section-title #section-04 }
 
 [คุณอนุทิน วงศ์สรรคกร](http://anuthin.org/) ให้ [ข้อมูลเพิ่มเติมมาทางทวิตเตอร์](https://twitter.com/anuthin/status/767944392577396736) ว่า [คุณภาณุวัฒน์ อู้สกุลวัฒนา](https://twitter.com/panuwatbank) Senior Type Designer แห่ง Cadson® Demak เป็นผู้ออกแบบฟอนต์เมล็ดพันธุ์ครับ ขอขอบคุณไว้ ณ ที่นี้ด้วย (ตอนเขียนรีวิวเริ่มแรกผมยังไม่ได้เปิดดูข้างในไฟล์ฟอนต์ เลยไม่รู้ว่าใครเป็นผู้ออกแบบฟอนต์ครับ)
 
