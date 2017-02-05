@@ -5,14 +5,14 @@
 @import "mixin";
 
 $brand: #fff;
-$second: #8b0;
+$second: #7a0;
 
 body {
-  background: #8b0;
+  background: #7a0;
   color: $dark;
 }
 
-$border-color: lighten(#8b0, 5%);
+$border-color: lighten(#7a0, 5%);
 
 hr {
   border-bottom: 1px solid $border-color;
@@ -59,15 +59,15 @@ ul.contact-list li a:hover {
 
 .site-nav ul {
   li a {
-    color: #8b0;
-    background: $brand;
-    box-shadow: 0em 0.1em 0.2em darken(#8b0, 10%);
+    color: $brand;
+    background: #7a0;
+    box-shadow: 0em 0.1em 0.2em darken(#7a0, 10%);
     opacity: 0.9;
   }
   li a:hover,
   li.active a {
-    color: #fff;
-    background: transparent;
+    color: #7a0;
+    background: $brand;
   }
 }
 
@@ -82,20 +82,20 @@ h1,h2,h3,h4,h4,h6,
 .boonbaan .banner img {
   background: $brand;
   opacity: 0.9;
-  box-shadow: 0em 0.5em 0.5em darken(#8b0, 10%);
+  box-shadow: 0em 0.5em 0.5em darken(#7a0, 10%);
 }
 
 .sharer a {
-  color: #8b0;
+  color: #7a0;
   background: $brand;
-  box-shadow: 0em 0.1em 0.2em darken(#8b0, 10%);
+  box-shadow: 0em 0.1em 0.2em darken(#7a0, 10%);
   opacity: 1;
   &:hover {
     color: #fff;
-    background: #8b0;
+    background: #7a0;
   }
 }
 
 a.supporter img {
-  box-shadow: 0em 0.1em 0.2em darken(#8b0, 10%);
+  box-shadow: 0em 0.1em 0.2em darken(#7a0, 10%);
 }
